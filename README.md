@@ -12,3 +12,5 @@ Please
  - push to main (git push)
 
 The last step will require your SSH key
+
+Sign your name below here:
