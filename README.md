@@ -8,7 +8,7 @@ Hello! We are JamTech. Welcome to our Senior Capstone Project.
 **Members of JamTech:**
 
 * Tristan Cilley<!-- Write your Name Below, use * for bullet point -->
-
+* Maha Fazli
 
 
 <br>
