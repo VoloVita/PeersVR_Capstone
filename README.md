@@ -10,6 +10,7 @@ Hello! We are JamTech. Welcome to our Senior Capstone Project.
 * Tristan Cilley<!-- Write your Name Below, use * for bullet point -->
 * Maha Fazli
 * Jacob Michaud
+* Allison Lupien
 
 
 <br>
