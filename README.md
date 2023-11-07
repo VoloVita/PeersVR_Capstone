@@ -11,7 +11,7 @@ Hello! We are JamTech. Welcome to our Senior Capstone Project.
 * Maha Fazli
 * Jacob Michaud
 * Allison Lupien
-
+* Nick Sarno
 
 <br>
 This README.md file shall serve as an introduction to the software development project we will develop over the course of the 2023-2024 academic year.
