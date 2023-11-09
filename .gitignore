@@ -1,0 +1,43 @@
+# Unity-specific files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Oo]bj/
+[Pp]ackages/
+/[Tt]est[Rr]eports/
+[Ss]tats/
+[Oo]bjTesting/
+[Oo]bjTestPlayer/
+[Bb]uildGenerated/
+[Oo]bjDelaunay/
+*.apk
+*.unitypackage
+
+# VS Code directory
+.vscode/
+
+# Rider directory
+.idea/
+
+# User-specific project settings
+*.sln
+*.suo
+*.user
+*.userprefs
+*.lock
+*.sln.docstates
+
+# Mac-specific files
+.DS_Store
+
+# Windows thumbnail files
+Thumbs.db
+
+# Visual Studio files
+.vs2017/
+.vs2019/
+
