@@ -1,7 +1,5 @@
 name: Capstone DevCheck
-
-run-name: ${{ github.actor }} has initiated a DecCheck.
-
+run-name: ${{ github.actor }} has initiated a DevCheck.
 on:
   push:
     branches:
@@ -10,9 +8,11 @@ on:
   pull_request:
     branches:
       - main
-
 jobs:
-  Testing-DevCheck:
+  About-Workflow:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This was a test of this new workflow."
+        - run: |
+            echo "The job was automatically triggered by a ${{ github.event_name }} event"
+            echo "to the branch ${{ github.ref}} of the repository ${{ github.repository}}"
+        - run: echo "This job is now running on a ${{ runner.os }} server hosted by GitHub!"
