@@ -1,6 +1,6 @@
 name: Capstone DevCheck
 
-run-name: ${{ github.actor }} has pushed to Development Branch
+run-name: ${{ github.actor }} has initiated a DecCheck.
 
 on:
     push:
