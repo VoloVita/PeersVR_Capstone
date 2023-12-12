@@ -3,16 +3,16 @@ name: Capstone DevCheck
 run-name: ${{ github.actor }} has initiated a DecCheck.
 
 on:
-    push:
-        branches:
-            - main
-            - development
-    pull_request:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+      - development
+  pull_request:
+    branches:
+      - main
 
 jobs:
-    Testing-DevCheck:
-        runs-on: ubuntu-latest
-        steps:
-            - run: echo " This was a test of this new workflow"
+  Testing-DevCheck:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This was a test of this new workflow."
