@@ -80,3 +80,4 @@ Thumbs.db
 # Visual Studio files
 .vs2017/
 .vs2019/
+.vscode/
