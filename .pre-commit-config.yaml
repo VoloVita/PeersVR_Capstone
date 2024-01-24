@@ -1,0 +1,23 @@
+# This is a pre-commit YAML file for CAPSTONE COS 397/497
+# Author: JamTech
+# Date: 12/12/23
+
+# ------------------------------------------------------------------------------
+# To setup pre-commit hooks, you will need the pre-commit tool. This tool is a
+# framework for managing and maintaining multi-language pre-commit hooks.
+
+# Here is a link to the website for the pre-commit tool: https://pre-commit.com/
+
+# If you don't have the pre-commit tool:
+# ------------------------------------------------------------------------------
+
+
+repos:
+  - repo: git@github.com:pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml

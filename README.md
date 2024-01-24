@@ -1,5 +1,5 @@
 ##COS 397 - UMaine Senior Capstone Project 
-<!-- This next line is for rendering our team log from the Logo directory -->
+<!-- This next line is for rendering our team logo from the Logo directory -->
 ![jamTechLogo](Logo/jamTechLogo.png)
 
 Hello! We are JamTech. Welcome to our Senior Capstone Project.

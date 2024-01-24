@@ -1,0 +1,18 @@
+name: Capstone DevCheck
+run-name: ${{ github.actor }} has initiated a DevCheck.
+on:
+  push:
+    branches:
+      - main
+      - development
+  pull_request:
+    branches:
+      - main
+jobs:
+  About-Workflow:
+    runs-on: ubuntu-latest
+    steps:
+        - run: |
+            echo "The job was automatically triggered..."
+            echo "by a ${{ github.event_name }} event to the branch ${{ github.ref}} of the repository ${{ github.repository}}"
+        - run: echo "This job is now running on a ${{ runner.os }} server hosted by GitHub!"
