@@ -9,13 +9,14 @@ using TMPro;
 public class changevid : MonoBehaviour
 {
     VideoPlayer vid;
-    
+   
     
     // Start is called before the first frame update
     void Start()
     {
        //vid = GameObject.FindGameObjectWithTag("videop").GetComponent<VideoPlayer>();
        vid = GetComponent<VideoPlayer>();
+       
        vid.url = "Assets/VRTemplateAssets/Videos/onboarding_video_final.mp4";
     }
 
@@ -29,6 +30,7 @@ public class changevid : MonoBehaviour
     {
         if (val == 0){
             vid.url = "Assets/VRTemplateAssets/Videos/onboarding_video_final.mp4";
+           
         }
         if (val == 1){
             vid.url = "Assets/Scenes/test for vr vid.mp4";
@@ -36,6 +38,11 @@ public class changevid : MonoBehaviour
         if (val == 2){
             vid.url = "Assets/Scenes/mixkit-pet-owner-playing-with-a-cute-cat-1779-medium.mp4";
         }
+    }
+
+    public void ChangeVideo()
+    {
+        vid.url = "Assets/JamTech_Assets/PeersVideos/PEERS® for Young Adults - Don't be a conversation hog [Kqm3oxPmrX8].mp4";
     }
     
 }
