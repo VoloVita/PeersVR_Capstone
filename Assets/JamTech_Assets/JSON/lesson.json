@@ -2,7 +2,7 @@
    "lesson1": {
 
     "title": "Introduction and Trading Information",
-    "non-example-videos": [
+    "non_example_videos": [
         "https://www.youtube.com/watch?v=vFeXTIAbtD4", 
         "https://www.youtube.com/watch?v=TShmV0qPRBA",
         "https://www.youtube.com/watch?v=ORrW356oQos",
@@ -10,36 +10,36 @@
         "https://www.youtube.com/watch?v=woStWqjn4sg"
     ],
     "description": "In this level, you will be learning about the characteristics of good friendships, different types of friendships, and how to trade information in a conversation in order to develop friendships. Trading information is the buzzword that we use for having a good conversation. Good conversations involve the exchanging of information. The most important goal when trading information is to find common interests. Common interests are important because they are the foundation of friendships. These interests are what we talk about with our friends and what we do with our friends. Before reviewing the rules for trading information, it is also helpful to think about the characteristics of good friendships and the different types of friends.",
-    "more-info": "info",
-    "example-videos": "https://www.youtube.com/watch?v=_fGS51uDuMA",
+    "more_info": "info",
+    "example_videos": "https://www.youtube.com/watch?v=_fGS51uDuMA",
     "exercises": [
         "Review the rules for trading information before practicing",
         "Find common interests",
         "Consider what you could do with that common interest if you were going to hang out with your social coach"
     ],
 
-    "quiz-url": "url"
+    "quiz_url": "url"
 
    },
 
    "lesson2": {
 
     "title": "Trading Information and Two-Way Conversations",
-    "non-example-videos": [
+    "non_example_videos": [
         "https://www.youtube.com/watch?v=BDj4opri9nU",
         "https://www.youtube.com/watch?v=O1HjhREfxFw",
         ""
     ],
     "description": "In this level, you will be continuing to learn how to trade information and how to have a two-way conversation with others. Just as in the previous level, there are very specific rules for trading information and having two-way conversations. When talking to others, it is important to share the conversation, so that it goes back and forth from one person to the other. In order to know what to talk about, it can be helpful to think about what people like to talk about with each other.",
-    "more-info": "info",
-    "example-videos": "https://www.youtube.com/watch?v=4J_kiVswiBc&si=rc4r078Zk3Zgndk8",
+    "more_info": "info",
+    "example_videos": "https://www.youtube.com/watch?v=4J_kiVswiBc&si=rc4r078Zk3Zgndk8",
     "exercises": [
         "Review the rules for trading information before practicing",
         "Find common interests",
         "Consider what you could do with that common interest if you were going to hang out with your social coach"
     ],
 
-    "quiz-url": "url"
+    "quiz_url": "url"
 
    }
 
