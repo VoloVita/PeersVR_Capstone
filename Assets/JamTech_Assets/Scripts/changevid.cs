@@ -40,9 +40,6 @@ public class changevid : MonoBehaviour
         }
     }
 
-    public void ChangeVideo()
-    {
-        vid.url = "Assets/JamTech_Assets/PeersVideos/PEERS® for Young Adults - Don't be a conversation hog [Kqm3oxPmrX8].mp4";
-    }
+    
     
 }

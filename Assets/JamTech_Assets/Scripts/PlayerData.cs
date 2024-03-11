@@ -8,7 +8,7 @@ public class PlayerData
     
     public int lesson;
     public float[] position;
-
+    
 
     public PlayerData (Player player){
         lesson = player.lesson;
