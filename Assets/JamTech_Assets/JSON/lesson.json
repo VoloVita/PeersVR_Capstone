@@ -2,16 +2,38 @@
    "lesson1": {
 
     "title": "Introduction and Trading Information",
+    "non_example_thumbnails":[
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Don't be a conversation hog (bad).jpeg",
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Don't be an interviewer (bad).jpeg",
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Don't police (bad).jpeg",
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Don't tease (bad).jpeg",
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Don’t get too personal at first (bad).jpeg"
+    ],
+    "example_thumbnails":[
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Trading information 1  (Good).jpeg"
+    ],
+    "non_example_titles":[
+        "Don't be a conversation hog",
+        "Don't be an interviewer",
+        "Don't police",
+        "Don't tease",
+        "Don’t get too personal at first"
+    ],
+    "example_titles":[
+        "Trading information 1"
+    ],
     "non_example_videos": [
-        "https://www.youtube.com/watch?v=vFeXTIAbtD4", 
-        "https://www.youtube.com/watch?v=TShmV0qPRBA",
-        "https://www.youtube.com/watch?v=ORrW356oQos",
-        "https://www.youtube.com/watch?v=oLBoBQmODLA",
-        "https://www.youtube.com/watch?v=woStWqjn4sg"
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don't be a conversation hog (bad).mp4", 
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don't be an interviewer (bad).mp4",
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don't police (bad).mp4",
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don't tease (bad).mp4",
+        "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don’t get too personal at first (bad).mp4"
+        
     ],
     "description": "In this level, you will be learning about the characteristics of good friendships, different types of friendships, and how to trade information in a conversation in order to develop friendships. Trading information is the buzzword that we use for having a good conversation. Good conversations involve the exchanging of information. The most important goal when trading information is to find common interests. Common interests are important because they are the foundation of friendships. These interests are what we talk about with our friends and what we do with our friends. Before reviewing the rules for trading information, it is also helpful to think about the characteristics of good friendships and the different types of friends.",
     "more_info": "info",
-    "example_videos": "https://www.youtube.com/watch?v=_fGS51uDuMA",
+    "example_videos": ["Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Trading information 1  (Good).mp4"
+],
     "exercises": [
         "Review the rules for trading information before practicing",
         "Find common interests",
