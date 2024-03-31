@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData 
+public class PlayerData
 {
-    
+
     public int lesson;
     public float[] position;
-    
 
-    public PlayerData (Player player){
+
+    public PlayerData(Player player)
+    {
         lesson = player.lesson;
 
         position = new float[3];

@@ -10,7 +10,7 @@ public class Jsonconfig : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     public LessonData LoadLessonData()
