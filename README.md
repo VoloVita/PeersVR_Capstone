@@ -1,8 +1,9 @@
-##COS 397 - UMaine Senior Capstone Project 
+##COS 397 - 497 - UMaine Senior Capstone Project 
 <!-- This next line is for rendering our team logo from the Logo directory -->
 ![jamTechLogo](Logo/jamTechLogo.png)
 
-Hello! We are JamTech. Welcome to our Senior Capstone Project.
+Hello! We are JamTech. Welcome to our Senior Capstone Project. 
+This is a two-semester (Fall 2023 - Spring 2024) computer science capstone course at the University of Maine
 
 <br>
 **Members of JamTech:**
