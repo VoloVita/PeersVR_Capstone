@@ -83,5 +83,5 @@ Thumbs.db
 .vscode/
 
 # Peers Video Content
-/[Aa]ssets/JamTech_Assets/PeersVideoContent.meta
-/[Aa]ssets/JamTech_Assets/PeersVideoContent/*
+/[Aa]ssets/JamTech_Assets/PeersVideosContent.meta
+/[Aa]ssets/JamTech_Assets/PeersVideosContent/*
