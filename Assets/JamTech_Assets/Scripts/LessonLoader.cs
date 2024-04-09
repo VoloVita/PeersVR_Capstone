@@ -10,8 +10,6 @@ using UnityEngine.Events;
 public class LessonLoader : MonoBehaviour
 {
     // Public Class Variables
-    public TMPro.TextMeshProUGUI lesson_title; // not referenced in scene, initialized in start()
-    public TMPro.TextMeshProUGUI lesson_desc; // not referenced in scene, initialized in start()
     public GameObject lesson_content; // object reference to scroll view content of Lesson View
     public GameObject example_content; // object reference to example video scroll view content
     public GameObject non_example_content; // object reference to non example video scroll view content
@@ -19,6 +17,8 @@ public class LessonLoader : MonoBehaviour
 
     // Private Class Variables
     private LessonData lessonData; // 
+    private TMPro.TextMeshProUGUI lesson_desc; // not referenced in scene, initialized in start()
+    private TMPro.TextMeshProUGUI lesson_title; // not referenced in scene, initialized in start()
 
 
     void Start()
@@ -34,19 +34,36 @@ public class LessonLoader : MonoBehaviour
 
         if (lessonData != null)
         {
-            TMPro.TextMeshProUGUI lesson_title = lesson_content.transform.Find("header").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+            // find TMP for lesson title, update content from JSON
+            lesson_title = lesson_content.transform.Find("header").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             lesson_title.text = lessonData[lessonNum].title;
 
-            // Update Title and Description from first JSON section
-            TMPro.TextMeshProUGUI lesson_title = lesson_content.transform.Find("description").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+            // find TMP for lesson description, update content from JSON
+            lesson_desc = lesson_content.transform.Find("description").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             lesson_desc.text = lessonData[lessonNum].description;
 
             // Update Non-example video carousel thumbnails and titles
-            // get ref to nonex content
+
+            // Destroy all video thumbnail objects in content object
+            foreach (Transform child in non_example_content)
+            {
+                Destroy(child.gameObject);
+            }
+            // Get number of videos from JSON
+            numVids = lessonData[lessonNum].Length;
+
+            for (int i = 0; i < numVids; i++)
+            {
+                // instantiate new thumnail prefab
+
+                // initialize thumbnail image
+
+                // initialize thumbnail title
+
+            }
 
 
-            Transform nonex_carousel = non_example_content.transform.Find($"video{w}");
-            nonex_carousel.gameObject.SetActive(false);
+
             // Update example video carousel thumbnails and titles
 
 
@@ -64,6 +81,10 @@ public class LessonLoader : MonoBehaviour
 
     }
 
+
+
+
+
     private void rebuildCarousel(LessonData lessonData)
     {
 
@@ -71,4 +92,25 @@ public class LessonLoader : MonoBehaviour
     }
 
 
+
+
+
+    /// <summary>
+    /// This function takes in a file path to an image and create a sprite object 
+    /// </summary>
+    /// <param name="path">File path to image </param> 
+    /// <returns>Returns a newly created sprite object</returns>
+    public Sprite LoadSpriteFromFile(string path)
+    {
+        // Read the bytes from the file
+        byte[] fileData = System.IO.File.ReadAllBytes(path);
+
+        // Create a texture and load the bytes into it
+        Texture2D texture = new Texture2D(2, 2);
+        texture.LoadImage(fileData);
+
+        // Create a sprite from the texture
+        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+        return sprite;
+    }
 }
