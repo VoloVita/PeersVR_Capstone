@@ -2,11 +2,11 @@
     "lesson1": {
         "title": "Introduction and Trading Information",
         "non_example_thumbnails": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Don't be a conversation hog (bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Don't be an interviewer (bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Don't police (bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Don't tease (bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Don’t get too personal at first (bad).jpeg"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont be a conversation hog (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont be an interviewer (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont police (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont tease (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont get too personal at first (bad).jpeg"
         ],
         "example_thumbnails": [
             "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Trading information 1  (Good).jpeg"
@@ -22,11 +22,11 @@
             "Trading information 1"
         ],
         "non_example_videos": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Don't be a conversation hog (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Don't be an interviewer (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Don't police (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Don't tease (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Don’t get too personal at first (bad).mp4"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont be a conversation hog (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont be an interviewer (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont police (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont tease (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont get too personal at first (bad).mp4"
         ],
         "example_videos": [
             "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Trading information 1  (Good).mp4"
@@ -43,8 +43,8 @@
     "lesson2": {
         "title": "Trading Information and Two-Way Conversations",
         "non_example_thumbnails": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Don't Brag (Bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Don't be argumentative (Bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Dont Brag (Bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Dont be argumentative (Bad).jpg",
             "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good volume control_Too loud (bad).jpg",
             "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good volume control_Too quiet (bad).jpg",
             "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good body boundaries_Too close (bad).jpg",
@@ -69,8 +69,8 @@
             "Trading information 2"
         ],
         "non_example_videos": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Don't Brag (Bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Don't be argumentative (Bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Dont Brag (Bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Dont be argumentative (Bad).mp4",
             "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good volume control_Too loud (bad).mp4",
             "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good volume control_Too quiet (bad).mp4",
             "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good body boundaries_Too close (bad).mp4",
