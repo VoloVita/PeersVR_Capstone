@@ -33,7 +33,7 @@ public class LessonLoader : MonoBehaviour
     {
 
         //loads the data from json
-        lessonData = GetComponent<Jsonconfig>().LoadLessonData();
+        lessonData = GetComponent<Jsonconfig>().LoadLessonData(1);
 
         // Check for null case of lessonData
         System.Diagnostics.Debug.Assert(lessonData != null, "Lesson data failed to load from JSON");
