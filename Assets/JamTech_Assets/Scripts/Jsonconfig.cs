@@ -5,29 +5,17 @@ using System.IO;
 
 public class Jsonconfig : MonoBehaviour
 {
-    private string lessonDataFilePath;
+    private string lessonDataFilePath = "Assets/JamTech_Assets/JSON/lesson.json";
+    private string quizDataFilePath = "Assets/JamTech_Assets/JSON/quiz.json";
     private LessonData lessonData;
 
-    void Start()
-    {
 
-    }
     /// <summary>
     ///  This function opens the content JSON file and makes a playerData object
     /// </summary>
-    /// <param name="whichPath"></param> 1 for lesson data, 2 for quiz data
     /// <returns></returns> Returns a playerData object
-    public LessonData LoadLessonData(int whichPath)
+    public LessonData LoadLessonData()
     {
-        switch (whichPath)
-        {
-            case 1:
-                lessonDataFilePath = "Assets/JamTech_Assets/JSON/lesson.json";
-                break;
-            case 2:
-                lessonDataFilePath = "Assets/JamTech_Assets/JSON/quiz.json";
-        }
-
         if (File.Exists(lessonDataFilePath))
         {
             string json = File.ReadAllText(lessonDataFilePath);
@@ -40,6 +28,22 @@ public class Jsonconfig : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    ///  This function opens the content JSON file and makes a quizData object
+    /// </summary>
+    /// <returns></returns> Returns a quizData object
+    public QuizData LoadQuizData()
+    {
+        if (File.Exists(quizDataFilePath))
+        {
+            string json = File.ReadAllText(quizDataFilePath);
+            return JsonUtility.FromJson<QuizData>(json);
+        }
+        else
+        {
+            Debug.LogError("Quiz data file not found!");
+            return null;
+        }
+    }
 
 }

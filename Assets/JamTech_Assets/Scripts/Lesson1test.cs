@@ -89,7 +89,7 @@ public class Lesson1test : MonoBehaviour
         int badvideocount = 0;
 
         //loads the data from json
-        lessonData = testobject.GetComponent<Jsonconfig>().LoadLessonData(1);
+        lessonData = testobject.GetComponent<Jsonconfig>().LoadLessonData();
 
         //if lesson number 1 AND lessonData exists AND Lesson data file is found...
         if (i == 1 && lessonData != null && lessonData.lesson1 != null)

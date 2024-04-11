@@ -33,7 +33,7 @@ public class LessonLoader : MonoBehaviour
     {
 
         //loads the data from json
-        lessonData = GetComponent<Jsonconfig>().LoadLessonData(1);
+        lessonData = GetComponent<Jsonconfig>().LoadLessonData();
 
         // Check for null case of lessonData
         System.Diagnostics.Debug.Assert(lessonData != null, "Lesson data failed to load from JSON");
@@ -100,6 +100,7 @@ public class LessonLoader : MonoBehaviour
 
             // update thumbnail image and enable thumbnail button
             imageComponent.sprite = thumbnailSprite;
+
 
 
             // find thumbnail title component
