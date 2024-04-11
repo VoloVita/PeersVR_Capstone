@@ -2,34 +2,34 @@
     "lesson1": {
         "title": "Introduction and Trading Information",
         "non_example_thumbnails": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Don't be a conversation hog (bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Don't be an interviewer (bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Don't police (bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Don't tease (bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Don’t get too personal at first (bad).jpeg"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont be a conversation hog (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont be an interviewer (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont police (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont tease (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont get too personal at first (bad).jpeg"
         ],
         "example_thumbnails": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS® - Trading information 1  (Good).jpeg"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Trading information 1  (Good).jpeg"
         ],
         "non_example_titles": [
-            "Don't be a conversation hog",
-            "Don't be an interviewer",
-            "Don't police",
-            "Don't tease",
-            "Don’t get too personal at first"
+            "Dont be a conversation hog",
+            "Dont be an interviewer",
+            "Dont police",
+            "Dont tease",
+            "Dont get too personal at first"
         ],
         "example_titles": [
             "Trading information 1"
         ],
         "non_example_videos": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don't be a conversation hog (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don't be an interviewer (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don't police (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don't tease (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Don’t get too personal at first (bad).mp4"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont be a conversation hog (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont be an interviewer (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont police (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont tease (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont get too personal at first (bad).mp4"
         ],
         "example_videos": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS® - Trading information 1  (Good).mp4"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Trading information 1  (Good).mp4"
         ],
         "description": "In this level, you will be learning about the characteristics of good friendships, different types of friendships, and how to trade information in a conversation in order to develop friendships. Trading information is the buzzword that we use for having a good conversation. Good conversations involve the exchanging of information. The most important goal when trading information is to find common interests. Common interests are important because they are the foundation of friendships. These interests are what we talk about with our friends and what we do with our friends. Before reviewing the rules for trading information, it is also helpful to think about the characteristics of good friendships and the different types of friends.",
         "more_info": "info",
@@ -43,21 +43,21 @@
     "lesson2": {
         "title": "Trading Information and Two-Way Conversations",
         "non_example_thumbnails": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Don't Brag (Bad).jpeg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Don't be argumentative (Bad).jpg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Use good volume control_Too loud (bad).jpg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Use good volume control_Too quiet (bad).jpg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Use good body boundaries_Too close (bad).jpg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Use good body boundaries_Too far away (bad).jpg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Use good eye contact_No eye contact (bad).jpg",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Use good eye contact_Staring (bad).jpg"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Dont Brag (Bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Dont be argumentative (Bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good volume control_Too loud (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good volume control_Too quiet (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good body boundaries_Too close (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good body boundaries_Too far away (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good eye contact_No eye contact (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good eye contact_Staring (bad).jpg"
         ],
         "example_thumbnails": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS® - Trading Information 2 (Good).jpg"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Trading Information 2 (Good).jpg"
         ],
         "non_example_titles": [
-            "Don't Brag",
-            "Don't be argumentative",
+            "Dont Brag",
+            "Dont be argumentative",
             "Use good volume control_Too loud",
             "Use good volume control_Too quiet",
             "Use good body boundaries_Too close",
@@ -69,14 +69,14 @@
             "Trading information 2"
         ],
         "non_example_videos": [
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS® - Don't Brag (Bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS® - Don't be argumentative (Bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS® - Use good volume control_Too loud (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS® - Use good volume control_Too quiet (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS® - Use good body boundaries_Too close (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS® - Use good body boundaries_Too far away (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS® - Use good eye contact_No eye contact (bad).mp4",
-            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS® - Use good eye contact_Staring (bad).mp4"
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Dont Brag (Bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Dont be argumentative (Bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good volume control_Too loud (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good volume control_Too quiet (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good body boundaries_Too close (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good body boundaries_Too far away (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good eye contact_No eye contact (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good eye contact_Staring (bad).mp4"
         ],
         "example_videos": "https://www.youtube.com/watch?v=4J_kiVswiBc&si=rc4r078Zk3Zgndk8",
         "description": "In this level, you will be continuing to learn how to trade information and how to have a two-way conversation with others. Just as in the previous level, there are very specific rules for trading information and having two-way conversations. When talking to others, it is important to share the conversation, so that it goes back and forth from one person to the other. In order to know what to talk about, it can be helpful to think about what people like to talk about with each other.",
