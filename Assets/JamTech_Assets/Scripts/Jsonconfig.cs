@@ -45,5 +45,4 @@ public class Jsonconfig : MonoBehaviour
             return null;
         }
     }
-
 }
