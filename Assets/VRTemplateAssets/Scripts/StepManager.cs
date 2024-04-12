@@ -10,6 +10,8 @@ namespace Unity.VRTemplate
     /// </summary>
     public class StepManager : MonoBehaviour
     {
+        public GameObject tutorialp;
+        public GameObject curriculump;
         [Serializable]
         class Step
         {
@@ -27,9 +29,17 @@ namespace Unity.VRTemplate
         List<Step> m_StepList = new List<Step>();
 
         int m_CurrentStepIndex = 0;
-
+        public void Start()
+        {
+            curriculump.SetActive(false);
+        }
         public void Next()
         {
+            if(m_CurrentStepIndex == 7)
+            {
+                tutorialp.SetActive(false);
+                curriculump.SetActive(true);
+            }
             m_StepList[m_CurrentStepIndex].stepObject.SetActive(false);
             m_CurrentStepIndex = (m_CurrentStepIndex + 1) % m_StepList.Count;
             m_StepList[m_CurrentStepIndex].stepObject.SetActive(true);

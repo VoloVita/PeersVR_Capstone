@@ -1,13 +1,15 @@
 using System;
 
 [Serializable]
-public class LessonData {
+public class LessonData
+{
     public Lesson lesson1;
     public Lesson lesson2;
 }
 
 [Serializable]
-public class Lesson {
+public class Lesson
+{
     public string title;
     public string[] non_example_videos;
     public string[] non_example_thumbnails;

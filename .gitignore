@@ -81,3 +81,7 @@ Thumbs.db
 .vs2017/
 .vs2019/
 .vscode/
+
+# Peers Video Content
+/[Aa]ssets/JamTech_Assets/PeersVideosContent.meta
+/[Aa]ssets/JamTech_Assets/PeersVideosContent/*

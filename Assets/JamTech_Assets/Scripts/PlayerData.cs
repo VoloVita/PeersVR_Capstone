@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData 
+public class PlayerData
 {
-    
-    public int lesson;
-    public float[] position;
-    
 
-    public PlayerData (Player player){
+    public int lesson; // Last lesson accessed by player
+    public float[] position; // Last location of player in scene
+
+
+    public PlayerData(Player player)
+    {
+
         lesson = player.lesson;
 
         position = new float[3];

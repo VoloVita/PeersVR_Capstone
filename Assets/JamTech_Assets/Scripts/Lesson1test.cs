@@ -17,7 +17,9 @@ public class Lesson1test : MonoBehaviour
     private LessonData lessonData;
     public VideoPlayer videop;
     public TMPro.TextMeshProUGUI moreinfo;
-    
+    public GameObject lPannel;
+    public GameObject VPannel;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,7 @@ public class Lesson1test : MonoBehaviour
     {
         // Read the bytes from the file
         byte[] fileData = System.IO.File.ReadAllBytes(path);
-        
+
         // Create a texture and load the bytes into it
         Texture2D texture = new Texture2D(2, 2);
         texture.LoadImage(fileData);
@@ -45,9 +47,15 @@ public class Lesson1test : MonoBehaviour
     {
         videop.url = url;
     }
+    public void VideoClicked()
+    {
+        lPannel.SetActive(false);
+        VPannel.SetActive(true);
+
+    }
     public void lessonload(int i)
     {
-        for( int w = 1; w<7;w++)
+        for (int w = 1; w < 7; w++)
         {
             Transform videoreset = non_example_content.transform.Find($"video{w}");
             Transform videoreset2 = example_content.transform.Find($"video{w}");
@@ -58,11 +66,11 @@ public class Lesson1test : MonoBehaviour
         //ints for iterating over loops
         int badthumb = 0;
         int goodthumb = 0;
-        int goodvideocount = 0; 
+        int goodvideocount = 0;
         int badvideocount = 0;
         //loads the data from json
         lessonData = testobject.GetComponent<Jsonconfig>().LoadLessonData();
-//if lesson int passed is 1
+        //if lesson int passed is 1
         if (i == 1 && lessonData != null && lessonData.lesson1 != null)
         {
             //title
@@ -73,61 +81,63 @@ public class Lesson1test : MonoBehaviour
             moreinfo.text = lessonData.lesson1.more_info;
             foreach (string badthumbnail in lessonData.lesson1.non_example_thumbnails)
             {
-                Transform video = non_example_content.transform.Find($"video{badthumb+1}");
+                Transform video = non_example_content.transform.Find($"video{badthumb + 1}");
                 Image imageComponent = video.Find("Button Front").GetComponent<Image>();
-                
+
                 if (imageComponent != null)
                 {
                     Sprite thumbnailSprite = LoadSpriteFromFile(badthumbnail);
-                    
+
                     if (thumbnailSprite != null)
                     {
-                        
-                        imageComponent.sprite = thumbnailSprite;                       
-                        video.gameObject.SetActive(true); 
+
+                        imageComponent.sprite = thumbnailSprite;
+                        video.gameObject.SetActive(true);
                     }
-            
+
                 }
-                badthumb++; 
+                badthumb++;
             }
             // video titles and changing onclick methods
             foreach (string badvideo in lessonData.lesson1.non_example_videos)
             {
-                TMPro.TextMeshProUGUI badVid = non_example_content.transform.Find($"video{badvideocount+1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
+                TMPro.TextMeshProUGUI badVid = non_example_content.transform.Find($"video{badvideocount + 1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
                 badVid.text = lessonData.lesson1.non_example_titles[badvideocount];
-                Button butt = non_example_content.transform.Find($"video{badvideocount+1}").GetComponent<Button>();
+                Button butt = non_example_content.transform.Find($"video{badvideocount + 1}").GetComponent<Button>();
                 butt.onClick.RemoveAllListeners();
-                butt.onClick.AddListener(delegate {ChangeVideo(badvideo); });
+                butt.onClick.AddListener(delegate { ChangeVideo(badvideo); });
+                butt.onClick.AddListener(delegate { VideoClicked(); });
                 badvideocount++;
             }
-            
-           // example thumbnail images
+
+            // example thumbnail images
             foreach (string goodthumbnail in lessonData.lesson1.example_thumbnails)
             {
-                Transform video = example_content.transform.Find($"video{goodthumb+1}");
+                Transform video = example_content.transform.Find($"video{goodthumb + 1}");
                 Image imageComponent = video.Find("Button Front").GetComponent<Image>();
                 if (imageComponent != null)
                 {
                     Sprite thumbnailSprite = LoadSpriteFromFile(goodthumbnail);
-                    
+
                     if (thumbnailSprite != null)
                     {
-                        
+
                         imageComponent.sprite = thumbnailSprite;
-                        video.gameObject.SetActive(true); 
+                        video.gameObject.SetActive(true);
                     }
-            
+
                 }
-                goodthumb++; 
+                goodthumb++;
             }
             // titles for videos and changing onclick methods
             foreach (string goodvideo in lessonData.lesson1.example_videos)
             {
-                TMPro.TextMeshProUGUI goodVid = example_content.transform.Find($"video{goodvideocount+1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
+                TMPro.TextMeshProUGUI goodVid = example_content.transform.Find($"video{goodvideocount + 1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
                 goodVid.text = lessonData.lesson1.example_titles[goodvideocount];
-                Button butt = example_content.transform.Find($"video{goodvideocount+1}").GetComponent<Button>();
+                Button butt = example_content.transform.Find($"video{goodvideocount + 1}").GetComponent<Button>();
                 butt.onClick.RemoveAllListeners();
-                butt.onClick.AddListener(delegate {ChangeVideo(goodvideo); });
+                butt.onClick.AddListener(delegate { ChangeVideo(goodvideo); });
+                butt.onClick.AddListener(delegate { VideoClicked(); });
                 goodvideocount++;
             }
             TMPro.TextMeshProUGUI exerciseText = lessonPannelcontent.transform.Find("Exercise button").Find("Exercise text").GetComponent<TMPro.TextMeshProUGUI>();
