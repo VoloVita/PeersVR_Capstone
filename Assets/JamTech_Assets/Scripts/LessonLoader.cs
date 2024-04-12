@@ -20,6 +20,8 @@ public class LessonLoader : MonoBehaviour
     public GameObject lPannel;
     public GameObject VPannel;
     public GameObject QPannel;
+    public GameObject CPannel;
+    public GameObject readMoreContent;
     public GameObject quiz_content; // quiz content frame
 
    
@@ -186,7 +188,11 @@ public class LessonLoader : MonoBehaviour
 
 
         // Update Rules Popup
-
+        foreach (Transform child in readMoreContent.transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        readMoreContent.transform.Find($"Lesson{lessonNum}").gameObject.SetActive(true);
 
         // Update Exercises
 
@@ -282,13 +288,14 @@ public class LessonLoader : MonoBehaviour
     {
         lPannel.SetActive(false);
         VPannel.SetActive(true);
+        
+
 
     }
     public void QuizClicked()
     {
         QPannel.SetActive(false);
-        lPannel.SetActive(true);
-
+        CPannel.SetActive(true);
     }
 
     /// <summary>
