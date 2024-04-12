@@ -1,5 +1,5 @@
 {
-    "topic_1_quiz": {
+    "quiz1": {
         "q1_prompt": "The most important part of having a conversation is to:",
         "q1_options": [
             "Trade information",
@@ -15,7 +15,7 @@
             2
         ]
     },
-    "topic_2_quiz": {
+    "quiz2": {
         "q1_prompt": "One of the rules for having a two-way conversation is to:",
         "q1_options": [
             "Be an interviewer",
@@ -31,7 +31,7 @@
             2
         ]
     },
-    "topic_3_quiz": {
+    "quiz3": {
         "q1_prompt": "When you're calling a friend on the telephone, it is important to:",
         "q1_options": [
             "Tell them your first and last name and where you go to school",
@@ -47,7 +47,7 @@
             1
         ]
     },
-    "topic_4_quiz": {
+    "quiz4": {
         "q1_prompt": "It's ALWAYS a good idea to make friends with someone who:",
         "q1_options": [
             "Is more popular than you",
@@ -63,7 +63,7 @@
             2
         ]
     },
-    "topic_5_quiz": {
+    "quiz5": {
         "q1_prompt": "When you first meet someone, it is important to:",
         "q1_options": [
             "To be funny and make them laugh",

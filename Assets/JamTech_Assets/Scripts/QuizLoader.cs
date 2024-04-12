@@ -15,13 +15,13 @@ public class QuizLoader : MonoBehaviour
     private TMPro.TextMeshProUGUI quiz_prompt;
     private TMPro.TextMeshProUGUI option1;
     private TMPro.TextMeshProUGUI option2;
+   
 
-
-    public void loadQuiz(int quizNum, int questionNum)
+    public void LoadQuiz(int quizNum)
     {
         // validate input
-        System.Diagnostics.Debug.Assert(questionNum == 1 || questionNum == 2, "QuestionNum must be a 1 or 2");
-
+       // System.Diagnostics.Debug.Assert(questionNum == 1 || questionNum == 2, "QuestionNum must be a 1 or 2");
+       // int questionNum = 1;
         // loads the data from json
         quizData = GetComponent<Jsonconfig>().LoadQuizData();
         // Check for null case of quizData
@@ -53,29 +53,30 @@ public class QuizLoader : MonoBehaviour
         System.Diagnostics.Debug.Assert(quiz != null, "Current quiz failed to load from JSON");
 
 
-        if (questionNum == 1)
-        {
+      //  if (questionNum == 1)
+       // {
             // Get TMP component associated with prompt text
             quiz_prompt = quiz_content.transform.Find("Prompt Text").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             quiz_prompt.text = quiz.q1_prompt;
             // update quiz question 1
-            option1 = quiz_content.transform.Find("Response Button 1").Find("Text (Legacy) ").GetComponent<TMPro.TextMeshProUGUI>();
-            option1.text = quiz.q2_options[0];
+            option1 = quiz_content.transform.Find("Response Button 1").Find("Text (Legacy)").GetComponent<TMPro.TextMeshProUGUI>();
+            option1.text = quiz.q1_options[0];
             // update quiz question 2
-            option2 = quiz_content.transform.Find("Response Button 2").Find("Text (Legacy) ").GetComponent<TMPro.TextMeshProUGUI>();
-            option2.text = quiz.q2_options[1];
-        }
-        else
-        {
-            // Get TMP component associated with prompt text
-            quiz_prompt = quiz_content.transform.Find("Prompt Text").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
-            quiz_prompt.text = quiz.q1_prompt;
-            // update quiz question 1
-            option1 = quiz_content.transform.Find("Response Button 1").Find("Text (Legacy) ").GetComponent<TMPro.TextMeshProUGUI>();
-            option1.text = quiz.q2_options[0];
-            // update quiz question 2
-            option2 = quiz_content.transform.Find("Response Button 2").Find("Text (Legacy) ").GetComponent<TMPro.TextMeshProUGUI>();
-            option2.text = quiz.q2_options[1];
-        }
+            option2 = quiz_content.transform.Find("Response Button 2").Find("Text (Legacy)").GetComponent<TMPro.TextMeshProUGUI>();
+            option2.text = quiz.q1_options[1];
+       // }
+        // else
+        // {
+        //     // Get TMP component associated with prompt text
+        //     quiz_prompt = quiz_content.transform.Find("Prompt Text").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+        //     quiz_prompt.text = quiz.q2_prompt;
+        //     // update quiz question 1
+        //     option1 = quiz_content.transform.Find("Response Button 1").Find("Text (Legacy) ").GetComponent<TMPro.TextMeshProUGUI>();
+        //     option1.text = quiz.q2_options[0];
+        //     // update quiz question 2
+        //     option2 = quiz_content.transform.Find("Response Button 2").Find("Text (Legacy) ").GetComponent<TMPro.TextMeshProUGUI>();
+        //     option2.text = quiz.q2_options[1];
+        // }
+       // questionNum++;
     }
 }

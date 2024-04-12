@@ -19,14 +19,22 @@ public class LessonLoader : MonoBehaviour
     public VideoPlayer video_output; // reference to video view player
     public GameObject lPannel;
     public GameObject VPannel;
+    public GameObject QPannel;
+    public GameObject quiz_content; // quiz content frame
 
+   
     // Private Class Variables
     private LessonData lessonData; // All Lesson content Data returned from JSON
     private Lesson lesson; // Current Lesson's content 
     private TMPro.TextMeshProUGUI lesson_desc; // not referenced in scene
     private TMPro.TextMeshProUGUI lesson_title; // not referenced in scene
     private TMPro.TextMeshProUGUI moreinfo_text; // not referenced in scene
-    //private QuizLoader quizLoader;
+    private QuizData quizData; // All quiz content Data returned from JSON
+    private Quiz quiz; // this lesson's quiz content
+    private TMPro.TextMeshProUGUI quiz_prompt;
+    private TMPro.TextMeshProUGUI option1;
+    private TMPro.TextMeshProUGUI option2;
+    
     
 
    
@@ -183,12 +191,87 @@ public class LessonLoader : MonoBehaviour
         // Update Exercises
 
         // Update Quiz button
-      //  Button quiz_button = take_quiz.GetComponent<Button>();
-     //   quiz_button.onClick.RemoveAllListeners();
-     //   quiz_button.onClick.AddListener(delegate { quizLoader.loadQuiz(lessonNum, 1); });
+        Button quiz_button = take_quiz.GetComponent<Button>();
+        quiz_button.onClick.RemoveAllListeners();        
+        quiz_button.onClick.AddListener(delegate { LoadQuiz(lessonNum,1); });
+
     }
 
+    public void LoadQuiz(int quizNum,int questionNum)
+    {
+        // validate input
+       // System.Diagnostics.Debug.Assert(questionNum == 1 || questionNum == 2, "QuestionNum must be a 1 or 2");
+       // int questionNum = 1;
+        // loads the data from json
+        quizData = GetComponent<Jsonconfig>().LoadQuizData();
+        // Check for null case of quizData
+        System.Diagnostics.Debug.Assert(quizData != null, "Quiz data failed to load from JSON");
 
+        // determine which quiz's content to load
+        switch (quizNum)
+        {
+            case 1:
+                quiz = quizData.quiz1;
+                break;
+            case 2:
+                quiz = quizData.quiz2;
+                break;
+            case 3:
+                quiz = quizData.quiz3;
+                break;
+            case 4:
+                quiz = quizData.quiz4;
+                break;
+            case 5:
+                quiz = quizData.quiz5;
+                break;
+            default:
+                quiz = quizData.quiz1;
+                break;
+        }
+        // Check for null case of lessonData
+        System.Diagnostics.Debug.Assert(quiz != null, "Current quiz failed to load from JSON");
+
+
+        if (questionNum == 1)
+        {
+            // Get TMP component associated with prompt text
+            quiz_prompt = quiz_content.transform.Find("Prompt Text").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+            quiz_prompt.text = quiz.q1_prompt;
+            // update quiz question 1
+            option1 = quiz_content.transform.Find("Response Button 1").Find("Text (Legacy)").GetComponent<TMPro.TextMeshProUGUI>();
+            option1.text = quiz.q1_options[0];
+            // update quiz question 2
+            option2 = quiz_content.transform.Find("Response Button 2").Find("Text (Legacy)").GetComponent<TMPro.TextMeshProUGUI>();
+            option2.text = quiz.q1_options[1];
+
+            Button quiz_button = quiz_content.transform.Find("Response Button 1").GetComponent<Button>();
+            quiz_button.onClick.RemoveAllListeners();        
+            quiz_button.onClick.AddListener(delegate { LoadQuiz(quizNum,2); });
+            Button quiz_button1 = quiz_content.transform.Find("Response Button 2").GetComponent<Button>();
+            quiz_button1.onClick.RemoveAllListeners();        
+            quiz_button1.onClick.AddListener(delegate { LoadQuiz(quizNum,2); });
+        }
+        else
+        {
+            // Get TMP component associated with prompt text
+            quiz_prompt = quiz_content.transform.Find("Prompt Text").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+            quiz_prompt.text = quiz.q2_prompt;
+            // update quiz question 1
+            option1 = quiz_content.transform.Find("Response Button 1").Find("Text (Legacy)").GetComponent<TMPro.TextMeshProUGUI>();
+            option1.text = quiz.q2_options[0];
+            // update quiz question 2
+            option2 = quiz_content.transform.Find("Response Button 2").Find("Text (Legacy)").GetComponent<TMPro.TextMeshProUGUI>();
+            option2.text = quiz.q2_options[1];
+            Button quiz_button = quiz_content.transform.Find("Response Button 1").GetComponent<Button>();
+            quiz_button.onClick.RemoveAllListeners();        
+            quiz_button.onClick.AddListener(delegate { QuizClicked(); });
+            Button quiz_button1 = quiz_content.transform.Find("Response Button 2").GetComponent<Button>();
+            quiz_button1.onClick.RemoveAllListeners();        
+            quiz_button1.onClick.AddListener(delegate { QuizClicked(); });
+        }
+       
+    }
 
     public void ChangeVideo(string url)
     {
@@ -199,6 +282,12 @@ public class LessonLoader : MonoBehaviour
     {
         lPannel.SetActive(false);
         VPannel.SetActive(true);
+
+    }
+    public void QuizClicked()
+    {
+        QPannel.SetActive(false);
+        lPannel.SetActive(true);
 
     }
 
