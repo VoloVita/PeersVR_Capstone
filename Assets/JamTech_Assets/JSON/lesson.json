@@ -1,0 +1,214 @@
+{
+    "lesson1": {
+        "title": "Introduction and Trading Information",
+        "non_example_thumbnails": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont be a conversation hog (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont be an interviewer (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont police (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont tease (bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Dont get too personal at first (bad).jpeg"
+        ],
+        "example_thumbnails": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Trading information 1  (Good).jpeg"
+        ],
+        "non_example_titles": [
+            "Don't be a conversation hog",
+            "Don't be an interviewer",
+            "Don't police",
+            "Don't tease",
+            "Don't get too personal at first"
+        ],
+        "example_titles": [
+            "Trading information 1"
+        ],
+        "non_example_videos": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont be a conversation hog (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont be an interviewer (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont police (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont tease (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Dont get too personal at first (bad).mp4"
+        ],
+        "example_videos": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_1/videos/PEERS - Trading information 1  (Good).mp4"
+        ],
+        "description": "In this level, you will be learning about the characteristics of good friendships, different types of friendships, and how to trade information in a conversation in order to develop friendships. Trading information is the buzzword that we use for having a good conversation. Good conversations involve the exchanging of information. The most important goal when trading information is to find common interests. Common interests are important because they are the foundation of friendships. These interests are what we talk about with our friends and what we do with our friends. Before reviewing the rules for trading information, it is also helpful to think about the characteristics of good friendships and the different types of friends.",
+        "more_info": "info",
+        "exercises": [
+            "Review the rules for trading information before practicing",
+            "Find common interests",
+            "Consider what you could do with that common interest if you were going to hang out with your social coach"
+        ],
+        "quiz_url": "url"
+    },
+    "lesson2": {
+        "title": "Trading Information and Two-Way Conversations",
+        "non_example_thumbnails": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Dont Brag (Bad).jpeg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Dont be argumentative (Bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good volume control_Too loud (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good volume control_Too quiet (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good body boundaries_Too close (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good body boundaries_Too far away (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good eye contact_No eye contact (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Use good eye contact_Staring (bad).jpg"
+        ],
+        "example_thumbnails": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Trading Information 2 (Good).jpg"
+        ],
+        "non_example_titles": [
+            "Don't Brag",
+            "Don't be argumentative",
+            "Use good volume control: Too loud",
+            "Use good volume control: Too quiet",
+            "Use good body boundaries: Too close",
+            "Use good body boundaries: Too far away",
+            "Use good eye contact: No eye contact",
+            "Use good eye contact: Staring"
+        ],
+        "example_titles": [
+            "Trading information 2"
+        ],
+        "non_example_videos": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Dont Brag (Bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Dont be argumentative (Bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good volume control_Too loud (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good volume control_Too quiet (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good body boundaries_Too close (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good body boundaries_Too far away (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good eye contact_No eye contact (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Use good eye contact_Staring (bad).mp4"
+        ],
+        "example_videos": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_2/videos/PEERS - Trading Information 2 (Good).mp4"
+        ],
+        "description": "In this level, you will be continuing to learn how to trade information and how to have a two-way conversation with others. Just as in the previous level, there are very specific rules for trading information and having two-way conversations. When talking to others, it is important to share the conversation, so that it goes back and forth from one person to the other. In order to know what to talk about, it can be helpful to think about what people like to talk about with each other.",
+        "more_info": "info",
+        "exercises": [
+            "Practice trading information with a social coach this week"
+        ],
+        "quiz_url": "url"
+    },
+    "lesson3": {
+        "title": "Electronic Communication",
+        "non_example_thumbnails": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Exchanging Contact Information (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Beginning phone calls (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Ending phone calls (bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Entering Online Individual Conversation (Bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Exiting Online Individual Conversation (Bad).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Leaving a voicemail (bad).jpg"
+        ],
+        "example_thumbnails": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Exchanging Contact Information (good).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Beginning phone calls (good).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Ending phone calls (good).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Entering Online Individual Conversation (Good).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Exiting Online Individual Conversation (good).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Leaving a voicemail (good).jpg"
+        ],
+        "non_example_titles": [
+            "Exchanging Contact Information",
+            "Beginning phone calls",
+            "Ending phone calls",
+            "Entering Online Individual Conversation",
+            "Exiting Online Individual Conversation",
+            "Leaving a voicemail.jpg"
+        ],
+        "example_titles": [
+            "Exchanging Contact Information",
+            "Beginning phone calls",
+            "Ending phone calls",
+            "Entering Online Individual Conversation",
+            "Exiting Online Individual Conversation",
+            "Leaving a voicemail"
+        ],
+        "non_example_videos": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Exchanging Contact Information (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Beginning phone calls (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Ending phone calls (bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Entering Online Individual Conversation (Bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Exiting Online Individual Conversation (Bad).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Leaving a voicemail (bad).mp4"
+        ],
+        "example_videos": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Exchanging Contact Information (good).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Beginning phone calls (good).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Ending phone calls (good).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Entering Online Individual Conversation (Good).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Exiting Online Individual Conversation (good).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Leaving a voicemail (good).mp4"
+        ],
+        "description": "In this level you will be learning how to appropriately use electronic forms of communication. There are very specific rules and steps for using electronic communication, which you will be practicing.",
+        "more_info": "info",
+        "exercises": [
+            "Practice using electronic communication with your social coach",
+            "Practice trading information with a social coach this week"
+        ],
+        "quiz_url": "url"
+    },
+    "lesson4": {
+        "title": "Choosing Appropriate Friends",
+        "non_example_thumbnails": [
+            
+        ],
+        "example_thumbnails": [
+            
+        ],
+        "non_example_titles": [
+            
+        ],
+        "example_titles": [
+            
+        ],
+        "non_example_videos": [
+            
+        ],
+        "example_videos": [
+            
+        ],
+        "description": "In this level, you will be learning how to choose appropriate friends through involvement in extracurricular activities and clubs. The best activities for finding friends are those where there are other people with common interests. This is often done through enrollment in extracurricular activities and finding a social group. Extracurricular activities and choice of social group should be based on your interests. These will be the best methods for meeting potential friends with common interests.",
+        "more_info": "info",
+        "exercises": [
+            "Enroll in extracurricular activities",
+            "Practice using electronic communication with your social coach",
+            "Practice trading information with a peer this week"
+        ],
+        "quiz_url": "url"
+    },
+    "lesson5": {
+        "title": "Appropriate Use of Humor",
+        "non_example_thumbnails": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_5/thumbnails/PEERS - Give a Courtesy laugh (bad).jpg"
+        ],
+        "example_thumbnails": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_5/thumbnails/PEERS - Give a courtesy laugh (good).jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_5/thumbnails/PEERS - Humor Feedback_Laughing WITH you.jpg",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_5/thumbnails/PEERS - Paying attention to humor feedback_Laughing AT you.jpg"
+        ],
+        "non_example_titles": [
+            "Give a Courtesy laugh"
+        ],
+        "example_titles": [
+            "Give a Courtesy laugh",
+            "Humor Feedback: Laughing WITH you",
+            "Paying attention to humor feedback: Laughing AT you"
+        ],
+        "non_example_videos": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_5/videos/PEERS - Give a Courtesy laugh (bad).mp4"
+        ],
+        "example_videos": [
+            "Assets/JamTech_Assets/PeersVideosContent/topic_5/videos/PEERS - Give a courtesy laugh (good).mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_5/videos/PEERS - Humor Feedback_Laughing WITH you.mp4",
+            "Assets/JamTech_Assets/PeersVideosContent/topic_5/videos/PEERS - Paying attention to humor feedback_Laughing AT you.mp4"
+        ],
+        "description": "In this level, we are going to review the rules for appropriate use of humor. Humor is an important way of communicating for many people, and when used appropriately, humor can be very magnetic. However, when humor is used inappropriately it may be one of the fastest ways to push people away. It is important to understand the rules for using humor if you want to make and keep friends.",
+        "more_info": "info",
+        "exercises": [
+            "Pay Attention to your humor feedback if you happen to tell a joke",
+            "Enroll in extracurricular activities",
+            "Practice using electronic communication with your social coach",
+            "Practice trading information with a peer this week"
+        ],
+        "quiz_url": "url"
+    }
+}
