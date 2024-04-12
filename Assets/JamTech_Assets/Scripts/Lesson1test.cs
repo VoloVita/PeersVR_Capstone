@@ -27,6 +27,8 @@ public class Lesson1test : MonoBehaviour
     public VideoPlayer videop;
     // moreinfo -> some TMP object in more-info window
     public TMPro.TextMeshProUGUI moreinfo;
+    public GameObject lPannel;
+    public GameObject VPannel;
 
 
     // Start is called before the first frame update
@@ -65,10 +67,13 @@ public class Lesson1test : MonoBehaviour
         videop.url = url;
     }
 
-    /// <summary>
-    /// Massive fuckoff function that idk what it does
-    /// </summary>
-    /// <param name="i">The # of the lesson to be loaded</param>
+    public void VideoClicked()
+    {
+        lPannel.SetActive(false);
+        VPannel.SetActive(true);
+
+    }
+
     public void lessonload(int i)
     {
         // Reset all Video thumbnails in carousel
@@ -144,7 +149,9 @@ public class Lesson1test : MonoBehaviour
                 // This line adds a new listener to the onClick event of the button.
                 // When this button is clicked, it will call the ChangeVideo method and pass badvideo as an argument.
                 butt.onClick.AddListener(delegate { ChangeVideo(badvideo); });
-                // Increment video count
+
+                butt.onClick.AddListener(delegate { VideoClicked(); });
+
                 badvideocount++;
             }
 
@@ -175,6 +182,7 @@ public class Lesson1test : MonoBehaviour
                 Button butt = example_content.transform.Find($"video{goodvideocount + 1}").GetComponent<Button>();
                 butt.onClick.RemoveAllListeners();
                 butt.onClick.AddListener(delegate { ChangeVideo(goodvideo); });
+                butt.onClick.AddListener(delegate { VideoClicked(); });
                 goodvideocount++;
             }
 
