@@ -14,32 +14,25 @@ public class LessonLoader : MonoBehaviour
     public GameObject lesson_content; // object reference to scroll view content of Lesson View
     public GameObject example_content; // object reference to example video scroll view content
     public GameObject non_example_content; // object reference to non example video scroll view content
-    public GameObject thumbnail_prefab; // object reference to video thumbnail prefab
+    public GameObject moreinfo_content; // object reference to scroll view content of moreinfo popup
     public VideoPlayer video_output; // reference to video view player
 
 
     // Private Class Variables
     private LessonData lessonData; // All Lesson content Data returned from JSON
     private Lesson lesson; // Current Lesson's content 
-    private TMPro.TextMeshProUGUI lesson_desc; // not referenced in scene, initialized in start()
-    private TMPro.TextMeshProUGUI lesson_title; // not referenced in scene, initialized in start()
-
-    void Start()
-    {
-
-    }
+    private TMPro.TextMeshProUGUI lesson_desc; // not referenced in scene
+    private TMPro.TextMeshProUGUI lesson_title; // not referenced in scene
+    private TMPro.TextMeshProUGUI moreinfo_text; // not referenced in scene
 
     public void loadLesson(int lessonNum)
     {
 
-        //loads the data from json
+        // load the data from json, check for null
         lessonData = GetComponent<Jsonconfig>().LoadLessonData();
-
-        // Check for null case of lessonData
         System.Diagnostics.Debug.Assert(lessonData != null, "Lesson data failed to load from JSON");
 
-
-        // load current lesson data based on argument passed to loadLesson()
+        // load specific lesson data based on argument passed to loadLesson(), check for null
         switch (lessonNum)
         {
             case 1:
@@ -61,10 +54,7 @@ public class LessonLoader : MonoBehaviour
                 lesson = lessonData.lesson1;
                 break;
         }
-
-        // Check for null case of current lesson
         System.Diagnostics.Debug.Assert(lesson != null, "Current lesson failed to load");
-
 
         // find TMP for lesson title, update content from JSON
         lesson_title = lesson_content.transform.Find("header").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
@@ -74,73 +64,111 @@ public class LessonLoader : MonoBehaviour
         lesson_desc = lesson_content.transform.Find("description").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
         lesson_desc.text = lesson.description;
 
-        // Update Non-example video carousel thumbnails and titles
+        // find TMP for More Info text, update content from JSON
+        moreinfo_text = moreinfo_content.transform.Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
+        moreinfo_text.text = lesson.description;
 
-        // Destroy all video thumbnail objects in content 
+        // Disable all non_example video objects
         foreach (Transform child in non_example_content.transform)
         {
-            Destroy(child.gameObject);
+            child.gameObject.SetActive(false);
         }
 
-        // Get number of videos from lesson object
-        int numVids = lesson.non_example_thumbnails.Length;
-
-        for (int i = 0; i < numVids; i++)
+        // Update all non_example thumbnails
+        int j = 0;
+        foreach (string thumbnail in lesson.non_example_thumbnails)
         {
-            // instantiate new thumbnail, parent, and rename
-            GameObject newObject = Instantiate(thumbnail_prefab, non_example_content.transform);
-            newObject.name = "video_" + i.ToString();
-
-            // find image component, check for null
-            Image imageComponent = newObject.transform.Find("Button Front").GetComponent<Image>();
+            // find video1, video2, ..., video6 in non-example content
+            Transform video = non_example_content.transform.Find($"video{j + 1}");
+            // find the image used for the thumbnail button 
+            Image imageComponent = video.Find("Button Front").GetComponent<Image>();
+            // check for null case
             System.Diagnostics.Debug.Assert(imageComponent != null, "Image Component of Thumbnail does not exist");
-            // create sprite from filepath, check for null
-            Sprite thumbnailSprite = LoadSpriteFromFile(lesson.non_example_thumbnails[i]);
+            // create sprite from filepath
+            Sprite thumbnailSprite = LoadSpriteFromFile(thumbnail);
+            // check for null case
             System.Diagnostics.Debug.Assert(thumbnailSprite != null, "Failed to create sprite from filepath");
-
-            // update thumbnail image and enable thumbnail button
+            // update thumbnail and set active
             imageComponent.sprite = thumbnailSprite;
+            video.gameObject.SetActive(true);
+            // increment to find next video
+            j++;
+        }
 
+        j = 0; // reset counter for next loop
 
-
-            // find thumbnail title component
-            TMPro.TextMeshProUGUI vidTitle = newObject.transform.Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
-            vidTitle.text = lesson.non_example_titles[i];
-
-            // update Listeners and Onclick event
+        // updating non-example video titles and changing onclick methods
+        // For each file path listed in the Non-example thumbnail section of json...
+        foreach (string video in lesson.non_example_videos)
+        {
+            // find TMP object associated with thumbnail title
+            TMPro.TextMeshProUGUI vid_title = non_example_content.transform.Find($"video{j + 1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
+            // update thumbnail title from JSON
+            vid_title.text = lesson.non_example_titles[j];
             // Get Button component of thumbnail
-            Button thumbnailButton = newObject.GetComponent<Button>();
-
+            Button thumbnail_button = non_example_content.transform.Find($"video{j + 1}").GetComponent<Button>();
             // This line removes any existing listeners attached to the onClick event of the button.
             // It prevents multiple listeners from stacking up if this code is executed multiple times.
-            thumbnailButton.onClick.RemoveAllListeners();
+            thumbnail_button.onClick.RemoveAllListeners();
             // This line adds a new listener to the onClick event of the button.
             // When this button is clicked, it will call the ChangeVideo method and pass badvideo as an argument.
-            thumbnailButton.onClick.AddListener(delegate { ChangeVideo(lesson.non_example_videos[i]); });
+            thumbnail_button.onClick.AddListener(delegate { ChangeVideo(video); });
+            // Increment video count
+            j++;
         }
 
+        // Update all example thumbnails
+        j = 0; // reset counter
+        foreach (string thumbnail in lesson.example_thumbnails)
+        {
+            // find video1, video2, ..., video6 in example content
+            Transform video = example_content.transform.Find($"video{j + 1}");
+            // find the image used for the thumbnail button 
+            Image imageComponent = video.Find("Button Front").GetComponent<Image>();
+            // check for null case
+            System.Diagnostics.Debug.Assert(imageComponent != null, "Image Component of Thumbnail does not exist");
+            // create sprite from filepath
+            Sprite thumbnailSprite = LoadSpriteFromFile(thumbnail);
+            // check for null case
+            System.Diagnostics.Debug.Assert(thumbnailSprite != null, "Failed to create sprite from filepath");
+            // update thumbnail and set active
+            imageComponent.sprite = thumbnailSprite;
+            video.gameObject.SetActive(true);
+            // increment to find next video
+            j++;
+        }
 
-        // Update example video carousel thumbnails and titles
+        j = 0; // reset counter
+
+        // updating non-example video titles and changing onclick methods
+        // For each file path listed in the Non-example thumbnail section of json...
+        foreach (string video in lesson.example_videos)
+        {
+            // find TMP object associated with thumbnail title
+            TMPro.TextMeshProUGUI vid_title = example_content.transform.Find($"video{j + 1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
+            // update thumbnail title from JSON
+            vid_title.text = lesson.example_titles[j];
+            // Get Button component of thumbnail
+            Button thumbnail_button = example_content.transform.Find($"video{j + 1}").GetComponent<Button>();
+            // This line removes any existing listeners attached to the onClick event of the button.
+            // It prevents multiple listeners from stacking up if this code is executed multiple times.
+            thumbnail_button.onClick.RemoveAllListeners();
+            // This line adds a new listener to the onClick event of the button.
+            // When this button is clicked, it will call the ChangeVideo method and pass badvideo as an argument.
+            thumbnail_button.onClick.AddListener(delegate { ChangeVideo(video); });
+            // Increment video count
+            j++;
+        }
 
 
         // Update Rules Popup
 
 
-
         // Update Exercises
 
 
-
     }
 
-
-
-
-
-    private void rebuildCarousel(LessonData lessonData)
-    {
-
-    }
 
 
     public void ChangeVideo(string url)
