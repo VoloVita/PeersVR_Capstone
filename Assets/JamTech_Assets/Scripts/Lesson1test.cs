@@ -29,6 +29,7 @@ public class Lesson1test : MonoBehaviour
     public TMPro.TextMeshProUGUI moreinfo;
     public GameObject lPannel;
     public GameObject VPannel;
+    public Lesson lesson; // Current Lesson's content 
 
 
     // Start is called before the first frame update
@@ -92,23 +93,44 @@ public class Lesson1test : MonoBehaviour
         int goodthumb = 0;
         int goodvideocount = 0;
         int badvideocount = 0;
-
+        
         //loads the data from json
         lessonData = testobject.GetComponent<Jsonconfig>().LoadLessonData();
-
-        //if lesson number 1 AND lessonData exists AND Lesson data file is found...
-        if (i == 1 && lessonData != null && lessonData.lesson1 != null)
+        switch (i)
         {
+            case 1:
+                lesson = lessonData.lesson1;
+                break;
+            case 2:
+                lesson = lessonData.lesson2;
+                break;
+            case 3:
+                lesson = lessonData.lesson3;
+                break;
+            case 4:
+                lesson = lessonData.lesson4;
+                break;
+            case 5:
+                lesson = lessonData.lesson5;
+                break;
+            default:
+                lesson = lessonData.lesson1;
+                break;
+        }
+        //lessonData exists AND Lesson data file is found...
+        if (lessonData != null && lesson != null)
+        {
+            
             //update title from json
-            header.text = lessonData.lesson1.title;
+            header.text = lesson.title;
             //update description from json
-            description.text = lessonData.lesson1.description;
+            description.text = lesson.description;
             // Update more info text from json
-            moreinfo.text = lessonData.lesson1.more_info;
+            moreinfo.text = lesson.more_info;
 
             // Update non example thumbnail images 
             // For each file path listed in the Non-example thumbnail section of json...
-            foreach (string badthumbnail in lessonData.lesson1.non_example_thumbnails)
+            foreach (string badthumbnail in lesson.non_example_thumbnails)
             {
                 // find video1, video2, ..., video6 in non-example content
                 Transform video = non_example_content.transform.Find($"video{badthumb + 1}");
@@ -134,12 +156,12 @@ public class Lesson1test : MonoBehaviour
 
             // updating non-example video titles and changing onclick methods
             // For each file path listed in the Non-example thumbnail section of json...
-            foreach (string badvideo in lessonData.lesson1.non_example_videos)
+            foreach (string badvideo in lesson.non_example_videos)
             {
                 // find TMP object associated with thumbnail title
                 TMPro.TextMeshProUGUI badVid = non_example_content.transform.Find($"video{badvideocount + 1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
                 // update thumbnail title from JSON
-                badVid.text = lessonData.lesson1.non_example_titles[badvideocount];
+                badVid.text = lesson.non_example_titles[badvideocount];
                 // Get Button component of thumbnail
                 Button butt = non_example_content.transform.Find($"video{badvideocount + 1}").GetComponent<Button>();
 
@@ -156,7 +178,7 @@ public class Lesson1test : MonoBehaviour
             }
 
             // Update example thumbnail images [SAME AS NON_THUMBNAILS]
-            foreach (string goodthumbnail in lessonData.lesson1.example_thumbnails)
+            foreach (string goodthumbnail in lesson.example_thumbnails)
             {
                 Transform video = example_content.transform.Find($"video{goodthumb + 1}");
                 Image imageComponent = video.Find("Button Front").GetComponent<Image>();
@@ -175,10 +197,10 @@ public class Lesson1test : MonoBehaviour
 
             // updating example video titles and changing onclick methods
             // SAME AS NON-EXAMPLE TITLES AND METHODS
-            foreach (string goodvideo in lessonData.lesson1.example_videos)
+            foreach (string goodvideo in lesson.example_videos)
             {
-                TMPro.TextMeshProUGUI goodVid = example_content.transform.Find($"video{goodvideocount + 1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
-                goodVid.text = lessonData.lesson1.example_titles[goodvideocount];
+                TMPro.TextMeshProUGUI goodVid = example_content.transform.Find($"video{goodvideocount + 1}").Find("Button Front").Find("Text (TMP) ").gameObject.GetComponent<TMPro.TextMeshProUGUI>();
+                goodVid.text = lesson.example_titles[goodvideocount];
                 Button butt = example_content.transform.Find($"video{goodvideocount + 1}").GetComponent<Button>();
                 butt.onClick.RemoveAllListeners();
                 butt.onClick.AddListener(delegate { ChangeVideo(goodvideo); });
@@ -191,7 +213,7 @@ public class Lesson1test : MonoBehaviour
             TMPro.TextMeshProUGUI exerciseText = lessonPannelcontent.transform.Find("Exercise button").Find("Exercise text").GetComponent<TMPro.TextMeshProUGUI>();
             exerciseText.text = "";
             // for each exercise listed in JSON...
-            foreach (string exercises in lessonData.lesson1.exercises)
+            foreach (string exercises in lesson.exercises)
             {
                 // Find exercise text, update text 
                 TMPro.TextMeshProUGUI exercisesText = lessonPannelcontent.transform.Find("Exercise button").Find("Exercise text").GetComponent<TMPro.TextMeshProUGUI>();

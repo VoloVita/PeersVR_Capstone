@@ -7,7 +7,7 @@ public class Jsonconfig : MonoBehaviour
 {
     private string lessonDataFilePath = "Assets/JamTech_Assets/JSON/lesson.json";
     private string quizDataFilePath = "Assets/JamTech_Assets/JSON/quiz.json";
-    private LessonData lessonData;
+    
 
 
     /// <summary>

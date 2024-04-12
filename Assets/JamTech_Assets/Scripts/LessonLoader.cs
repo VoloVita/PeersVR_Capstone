@@ -17,7 +17,8 @@ public class LessonLoader : MonoBehaviour
     public GameObject moreinfo_content; // object reference to scroll view content of moreinfo popup
     public GameObject take_quiz; // button to start quiz
     public VideoPlayer video_output; // reference to video view player
-
+    public GameObject lPannel;
+    public GameObject VPannel;
 
     // Private Class Variables
     private LessonData lessonData; // All Lesson content Data returned from JSON
@@ -25,12 +26,10 @@ public class LessonLoader : MonoBehaviour
     private TMPro.TextMeshProUGUI lesson_desc; // not referenced in scene
     private TMPro.TextMeshProUGUI lesson_title; // not referenced in scene
     private TMPro.TextMeshProUGUI moreinfo_text; // not referenced in scene
-    private QuizLoader quizLoader;
+    //private QuizLoader quizLoader;
+    
 
-    void start()
-    {
-        loadLesson(1);
-    }
+   
 
 
 
@@ -77,8 +76,12 @@ public class LessonLoader : MonoBehaviour
         moreinfo_text = moreinfo_content.transform.Find("Text (TMP)").GetComponent<TMPro.TextMeshProUGUI>();
         moreinfo_text.text = lesson.description;
 
-        // Disable all non_example video objects
+        // Disable all video objects
         foreach (Transform child in non_example_content.transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        foreach (Transform child in example_content.transform)
         {
             child.gameObject.SetActive(false);
         }
@@ -112,6 +115,8 @@ public class LessonLoader : MonoBehaviour
         {
             // find TMP object associated with thumbnail title
             TMPro.TextMeshProUGUI vid_title = non_example_content.transform.Find($"video{j + 1}").Find("Button Front").Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
+            System.Diagnostics.Debug.Assert(vid_title != null, "Failed find vid title");
+
             // update thumbnail title from JSON
             vid_title.text = lesson.non_example_titles[j];
             // Get Button component of thumbnail
@@ -122,6 +127,7 @@ public class LessonLoader : MonoBehaviour
             // This line adds a new listener to the onClick event of the button.
             // When this button is clicked, it will call the ChangeVideo method and pass badvideo as an argument.
             thumbnail_button.onClick.AddListener(delegate { ChangeVideo(video); });
+            thumbnail_button.onClick.AddListener(delegate { VideoClicked(); });
             // Increment video count
             j++;
         }
@@ -165,6 +171,7 @@ public class LessonLoader : MonoBehaviour
             // This line adds a new listener to the onClick event of the button.
             // When this button is clicked, it will call the ChangeVideo method and pass badvideo as an argument.
             thumbnail_button.onClick.AddListener(delegate { ChangeVideo(video); });
+            thumbnail_button.onClick.AddListener(delegate { VideoClicked(); });
             // Increment video count
             j++;
         }
@@ -176,9 +183,9 @@ public class LessonLoader : MonoBehaviour
         // Update Exercises
 
         // Update Quiz button
-        Button quiz_button = take_quiz.GetComponent<Button>();
-        quiz_button.onClick.RemoveAllListeners();
-        quiz_button.onClick.AddListener(delegate { quizLoader.loadQuiz(lessonNum, 1); });
+      //  Button quiz_button = take_quiz.GetComponent<Button>();
+     //   quiz_button.onClick.RemoveAllListeners();
+     //   quiz_button.onClick.AddListener(delegate { quizLoader.loadQuiz(lessonNum, 1); });
     }
 
 
@@ -188,6 +195,12 @@ public class LessonLoader : MonoBehaviour
         video_output.url = url;
     }
 
+    public void VideoClicked()
+    {
+        lPannel.SetActive(false);
+        VPannel.SetActive(true);
+
+    }
 
     /// <summary>
     /// This function takes in a file path to an image and create a sprite object 

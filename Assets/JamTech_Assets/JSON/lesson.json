@@ -12,11 +12,11 @@
             "Assets/JamTech_Assets/PeersVideosContent/topic_1/thumbnails/PEERS - Trading information 1  (Good).jpeg"
         ],
         "non_example_titles": [
-            "Dont be a conversation hog",
-            "Dont be an interviewer",
-            "Dont police",
-            "Dont tease",
-            "Dont get too personal at first"
+            "Don't be a conversation hog",
+            "Don't be an interviewer",
+            "Don't police",
+            "Don't tease",
+            "Don't get too personal at first"
         ],
         "example_titles": [
             "Trading information 1"
@@ -56,14 +56,14 @@
             "Assets/JamTech_Assets/PeersVideosContent/topic_2/thumbnails/PEERS - Trading Information 2 (Good).jpg"
         ],
         "non_example_titles": [
-            "Dont Brag",
-            "Dont be argumentative",
-            "Use good volume control_Too loud",
-            "Use good volume control_Too quiet",
-            "Use good body boundaries_Too close",
-            "Use good body boundaries_Too far away",
-            "Use good eye contact_No eye contact",
-            "Use good eye contact_Staring"
+            "Don't Brag",
+            "Don't be argumentative",
+            "Use good volume control: Too loud",
+            "Use good volume control: Too quiet",
+            "Use good body boundaries: Too close",
+            "Use good body boundaries: Too far away",
+            "Use good eye contact: No eye contact",
+            "Use good eye contact: Staring"
         ],
         "example_titles": [
             "Trading information 2"
@@ -107,20 +107,20 @@
             "Assets/JamTech_Assets/PeersVideosContent/topic_3/thumbnails/PEERS - Leaving a voicemail (good).jpg"
         ],
         "non_example_titles": [
-            "Exchanging Contact Information.jpg",
-            "Beginning phone calls.jpg",
-            "Ending phone calls.jpg",
-            "Entering Online Individual Conversation.jpg",
-            "Exiting Online Individual Conversation.jpg",
+            "Exchanging Contact Information",
+            "Beginning phone calls",
+            "Ending phone calls",
+            "Entering Online Individual Conversation",
+            "Exiting Online Individual Conversation",
             "Leaving a voicemail.jpg"
         ],
         "example_titles": [
-            "Exchanging Contact Information.jpg",
-            "Beginning phone calls.jpg",
-            "Ending phone calls.jpg",
-            "Entering Online Individual Conversation.jpg",
-            "Exiting Online Individual Conversation.jpg",
-            "Leaving a voicemail.jpg"
+            "Exchanging Contact Information",
+            "Beginning phone calls",
+            "Ending phone calls",
+            "Entering Online Individual Conversation",
+            "Exiting Online Individual Conversation",
+            "Leaving a voicemail"
         ],
         "non_example_videos": [
             "Assets/JamTech_Assets/PeersVideosContent/topic_3/videos/PEERS - Exchanging Contact Information (bad).mp4",
@@ -149,22 +149,22 @@
     "lesson4": {
         "title": "Choosing Appropriate Friends",
         "non_example_thumbnails": [
-            ""
+            
         ],
         "example_thumbnails": [
-            ""
+            
         ],
         "non_example_titles": [
-            ""
+            
         ],
         "example_titles": [
-            ""
+            
         ],
         "non_example_videos": [
-            ""
+            
         ],
         "example_videos": [
-            ""
+            
         ],
         "description": "In this level, you will be learning how to choose appropriate friends through involvement in extracurricular activities and clubs. The best activities for finding friends are those where there are other people with common interests. This is often done through enrollment in extracurricular activities and finding a social group. Extracurricular activities and choice of social group should be based on your interests. These will be the best methods for meeting potential friends with common interests.",
         "more_info": "info",
