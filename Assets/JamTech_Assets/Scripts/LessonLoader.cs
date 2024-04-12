@@ -15,6 +15,7 @@ public class LessonLoader : MonoBehaviour
     public GameObject example_content; // object reference to example video scroll view content
     public GameObject non_example_content; // object reference to non example video scroll view content
     public GameObject moreinfo_content; // object reference to scroll view content of moreinfo popup
+    public GameObject take_quiz; // button to start quiz
     public VideoPlayer video_output; // reference to video view player
 
 
@@ -24,6 +25,14 @@ public class LessonLoader : MonoBehaviour
     private TMPro.TextMeshProUGUI lesson_desc; // not referenced in scene
     private TMPro.TextMeshProUGUI lesson_title; // not referenced in scene
     private TMPro.TextMeshProUGUI moreinfo_text; // not referenced in scene
+    private QuizLoader quizLoader;
+
+    void start()
+    {
+        loadLesson(1);
+    }
+
+
 
     public void loadLesson(int lessonNum)
     {
@@ -166,7 +175,10 @@ public class LessonLoader : MonoBehaviour
 
         // Update Exercises
 
-
+        // Update Quiz button
+        Button quiz_button = take_quiz.GetComponent<Button>();
+        quiz_button.onClick.RemoveAllListeners();
+        quiz_button.onClick.AddListener(delegate { quizLoader.loadQuiz(lessonNum, 1); });
     }
 
 
