@@ -8,11 +8,11 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        LoadPlayer();
+     //   LoadPlayer();
     }
     void OnDestroy()
     {
-        SavePlayer();
+     //   SavePlayer();
     }
     public void SavePlayer()
     {

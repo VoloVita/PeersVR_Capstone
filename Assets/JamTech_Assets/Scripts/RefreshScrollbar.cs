@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class RefreshScrollbar : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    public void reset()
     {
        GetComponent<Scrollbar>().value = 1;
     }

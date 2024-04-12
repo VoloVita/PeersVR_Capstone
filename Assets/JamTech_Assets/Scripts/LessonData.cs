@@ -5,6 +5,9 @@ public class LessonData
 {
     public Lesson lesson1;
     public Lesson lesson2;
+    public Lesson lesson3;
+    public Lesson lesson4;
+    public Lesson lesson5;
 }
 
 [Serializable]
