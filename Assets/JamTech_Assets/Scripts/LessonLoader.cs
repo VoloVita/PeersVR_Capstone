@@ -65,7 +65,7 @@ public class LessonLoader : MonoBehaviour
         lesson_desc.text = lesson.description;
 
         // find TMP for More Info text, update content from JSON
-        moreinfo_text = moreinfo_content.transform.Find("Text (TMP) ").GetComponent<TMPro.TextMeshProUGUI>();
+        moreinfo_text = moreinfo_content.transform.Find("Text (TMP)").GetComponent<TMPro.TextMeshProUGUI>();
         moreinfo_text.text = lesson.description;
 
         // Disable all non_example video objects
