@@ -17,6 +17,8 @@ public class Lesson1test : MonoBehaviour
     private LessonData lessonData;
     public VideoPlayer videop;
     public TMPro.TextMeshProUGUI moreinfo;
+    public GameObject lPannel;
+    public GameObject VPannel;
 
 
     // Start is called before the first frame update
@@ -44,6 +46,12 @@ public class Lesson1test : MonoBehaviour
     public void ChangeVideo(string url)
     {
         videop.url = url;
+    }
+    public void VideoClicked()
+    {
+        lPannel.SetActive(false);
+        VPannel.SetActive(true);
+
     }
     public void lessonload(int i)
     {
@@ -98,6 +106,7 @@ public class Lesson1test : MonoBehaviour
                 Button butt = non_example_content.transform.Find($"video{badvideocount + 1}").GetComponent<Button>();
                 butt.onClick.RemoveAllListeners();
                 butt.onClick.AddListener(delegate { ChangeVideo(badvideo); });
+                butt.onClick.AddListener(delegate { VideoClicked(); });
                 badvideocount++;
             }
 
@@ -128,6 +137,7 @@ public class Lesson1test : MonoBehaviour
                 Button butt = example_content.transform.Find($"video{goodvideocount + 1}").GetComponent<Button>();
                 butt.onClick.RemoveAllListeners();
                 butt.onClick.AddListener(delegate { ChangeVideo(goodvideo); });
+                butt.onClick.AddListener(delegate { VideoClicked(); });
                 goodvideocount++;
             }
             TMPro.TextMeshProUGUI exerciseText = lessonPannelcontent.transform.Find("Exercise button").Find("Exercise text").GetComponent<TMPro.TextMeshProUGUI>();
