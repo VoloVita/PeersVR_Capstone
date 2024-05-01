@@ -17,5 +17,5 @@ public class Quiz
     public string[] q1_options;
     public string q2_prompt;
     public string[] q2_options;
-    public int[] quiz_answers;
+    public int[] topic_answers;
 }

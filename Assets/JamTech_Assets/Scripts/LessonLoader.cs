@@ -23,7 +23,10 @@ public class LessonLoader : MonoBehaviour
     public GameObject CPannel;
     public GameObject readMoreContent;
     public GameObject quiz_content; // quiz content frame
-
+    public GameObject correctButton;
+    public GameObject incorrectButton;
+    public GameObject correctButton2;
+    public GameObject incorrectButton2;
 
     // Private Class Variables
     private LessonData lessonData; // All Lesson content Data returned from JSON
@@ -272,6 +275,7 @@ public class LessonLoader : MonoBehaviour
 
         if (questionNum == 1) // if first quiz question...
         {
+
             // Change the text sections of the Quiz View
             quiz_prompt = quiz_content.transform.Find("Prompt Text").gameObject.GetComponent<TMPro.TextMeshProUGUI>(); // locate text component
             quiz_prompt.text = quiz.q1_prompt; //update the text for the quiz prompt
@@ -282,10 +286,21 @@ public class LessonLoader : MonoBehaviour
             // Update quiz button functionality
             Button quiz_button = quiz_content.transform.Find("Response Button 1").GetComponent<Button>();
             quiz_button.onClick.RemoveAllListeners();
-            quiz_button.onClick.AddListener(delegate { LoadQuiz(quizNum, 2); }); // on click, open quiz question number 2
+            quiz_button.onClick.AddListener(delegate { LoadQuiz(quizNum, 2); });
+            
+            if(quiz.topic_answers[0]==1)
+            quiz_button.onClick.AddListener(() => correctButton.SetActive(true));
+            else
+            quiz_button.onClick.AddListener(() => incorrectButton.SetActive(true)); // on click, open quiz question number 2
+            
             Button quiz_button1 = quiz_content.transform.Find("Response Button 2").GetComponent<Button>();
             quiz_button1.onClick.RemoveAllListeners();
-            quiz_button1.onClick.AddListener(delegate { LoadQuiz(quizNum, 2); }); // on click, open quiz question number 2
+            quiz_button1.onClick.AddListener(delegate { LoadQuiz(quizNum, 2); });
+            
+            if(quiz.topic_answers[0]==2)
+            quiz_button1.onClick.AddListener(() => correctButton.SetActive(true));
+            else
+            quiz_button1.onClick.AddListener(() => incorrectButton.SetActive(true)); // on click, open quiz question number 2
         }
         else // else second quiz question...
         {
@@ -299,10 +314,24 @@ public class LessonLoader : MonoBehaviour
             // Update quiz button functionality
             Button quiz_button = quiz_content.transform.Find("Response Button 1").GetComponent<Button>();
             quiz_button.onClick.RemoveAllListeners();
-            quiz_button.onClick.AddListener(delegate { QuizClicked(); }); // on click, switch to curriculum view
+             // on click, switch to curriculum view
+            
+            if(quiz.topic_answers[1]==1)
+            quiz_button.onClick.AddListener(() => correctButton2.SetActive(true));
+            else
+            quiz_button.onClick.AddListener(() => incorrectButton2.SetActive(true));
+            
+            
             Button quiz_button1 = quiz_content.transform.Find("Response Button 2").GetComponent<Button>();
             quiz_button1.onClick.RemoveAllListeners();
-            quiz_button1.onClick.AddListener(delegate { QuizClicked(); }); // on click, switch to curriculum view
+             // on click, switch to curriculum view
+
+            if(quiz.topic_answers[1]==2)
+            quiz_button1.onClick.AddListener(() => correctButton2.SetActive(true));
+            else
+            quiz_button1.onClick.AddListener(() => incorrectButton2.SetActive(true));
+            
+            
         }
 
     }

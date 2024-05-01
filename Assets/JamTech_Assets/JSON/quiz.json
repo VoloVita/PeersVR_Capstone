@@ -10,7 +10,7 @@
             "Make the other person like you",
             "Find common interests"
         ],
-        "topic_1_answers": [
+        "topic_answers": [
             1,
             2
         ]
@@ -26,7 +26,7 @@
             "Wait for the person to notice you",
             "Find a common interest"
         ],
-        "topic_2_answers": [
+        "topic_answers": [
             2,
             2
         ]
@@ -42,7 +42,7 @@
             "Avoid cold calling",
             "Let them do most of the talking"
         ],
-        "topic_3_answers": [
+        "topic_answers": [
             2,
             1
         ]
@@ -58,7 +58,7 @@
             "You're more likely to be popular",
             "It protects you from bullying"
         ],
-        "topic_4_answers": [
+        "topic_answers": [
             2,
             2
         ]
@@ -74,7 +74,7 @@
             "Whether the other person is laughing",
             "Your humor feedback"
         ],
-        "topic_5_answers": [
+        "topic_answers": [
             2,
             2
         ]
