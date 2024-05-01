@@ -36,14 +36,45 @@ public class LessonLoader : MonoBehaviour
     private TMPro.TextMeshProUGUI quiz_prompt;
     private TMPro.TextMeshProUGUI option1;
     private TMPro.TextMeshProUGUI option2;
+    private int lessonNumber;
+    
+
+    public void changeLesson(int number){
+        // load the data from json, check for null
+        lessonData = GetComponent<Jsonconfig>().LoadLessonData();
+        System.Diagnostics.Debug.Assert(lessonData != null, "Lesson data failed to load from JSON");
+
+
+        // load specific lesson data based on argument passed to loadLesson(), check for null
+        switch (number)
+        {
+            case 1:
+                lesson = lessonData.lesson1;
+                break;
+            case 2:
+                lesson = lessonData.lesson2;
+                break;
+            case 3:
+                lesson = lessonData.lesson3;
+                break;
+            case 4:
+                lesson = lessonData.lesson4;
+                break;
+            case 5:
+                lesson = lessonData.lesson5;
+                break;
+            default:
+                lesson = lessonData.lesson1;
+                break;
+        }
+        CPannel.transform.Find("Lesson Info").Find("Current Topic").gameObject.GetComponent<Text>().text = $"Topic {number}" ;
+        CPannel.transform.Find("Lesson Info").Find("Topic Name").gameObject.GetComponent<Text>().text = lesson.title;
+        lessonNumber = number;
+    }
 
 
 
-
-
-
-
-    public void loadLesson(int lessonNum)
+    public void loadLesson()
     {
 
         // load the data from json, check for null
@@ -51,7 +82,7 @@ public class LessonLoader : MonoBehaviour
         System.Diagnostics.Debug.Assert(lessonData != null, "Lesson data failed to load from JSON");
 
         // load specific lesson data based on argument passed to loadLesson(), check for null
-        switch (lessonNum)
+        switch (lessonNumber)
         {
             case 1:
                 lesson = lessonData.lesson1;
@@ -192,14 +223,14 @@ public class LessonLoader : MonoBehaviour
         {
             child.gameObject.SetActive(false);
         }
-        readMoreContent.transform.Find($"Lesson{lessonNum}").gameObject.SetActive(true);
+        readMoreContent.transform.Find($"Lesson{lessonNumber}").gameObject.SetActive(true);
 
         // Update Exercises
 
         // Update Quiz button
         Button quiz_button = take_quiz.GetComponent<Button>();
         quiz_button.onClick.RemoveAllListeners();
-        quiz_button.onClick.AddListener(delegate { LoadQuiz(lessonNum, 1); });
+        quiz_button.onClick.AddListener(delegate { LoadQuiz(lessonNumber, 1); });
 
     }
 
