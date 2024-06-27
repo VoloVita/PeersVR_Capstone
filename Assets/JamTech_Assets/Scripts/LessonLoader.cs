@@ -10,6 +10,7 @@ using System.Diagnostics;
 
 public class LessonLoader : MonoBehaviour
 {
+    //public TextAsset JSONFile;
     // Public Class Variables
     public GameObject lesson_content; // object reference to scroll view content of Lesson View
     public GameObject example_content; // object reference to example video scroll view content
@@ -27,7 +28,7 @@ public class LessonLoader : MonoBehaviour
     public GameObject incorrectButton;
     public GameObject correctButton2;
     public GameObject incorrectButton2;
-
+    public int lessonNumber;
     // Private Class Variables
     private LessonData lessonData; // All Lesson content Data returned from JSON
     private Lesson lesson; // Current Lesson's content 
@@ -39,8 +40,15 @@ public class LessonLoader : MonoBehaviour
     private TMPro.TextMeshProUGUI quiz_prompt;
     private TMPro.TextMeshProUGUI option1;
     private TMPro.TextMeshProUGUI option2;
-    private int lessonNumber;
     
+    
+
+    void Start()
+    {
+      //  lessonData = JSONFile.text;
+     //   lesson_content = GameObject.Find("LessonContent");
+     //   UnityEngine.Debug.Log(lesson_content);
+    }
 
     public void changeLesson(int number){
         // load the data from json, check for null
