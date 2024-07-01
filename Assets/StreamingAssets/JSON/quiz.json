@@ -1,0 +1,82 @@
+{
+    "quiz1": {
+        "q1_prompt": "The most important part of having a conversation is to:",
+        "q1_options": [
+            "Trade information",
+            "Make sure the other person is laughing and smiling"
+        ],
+        "q2_prompt": "The goal of a conversation is to:",
+        "q2_options": [
+            "Make the other person like you",
+            "Find common interests"
+        ],
+        "topic_answers": [
+            1,
+            2
+        ]
+    },
+    "quiz2": {
+        "q1_prompt": "One of the rules for having a two-way conversation is to:",
+        "q1_options": [
+            "Be an interviewer",
+            "Don't be an interviewer"
+        ],
+        "q2_prompt": "When starting a conversation:",
+        "q2_options": [
+            "Wait for the person to notice you",
+            "Find a common interest"
+        ],
+        "topic_answers": [
+            2,
+            2
+        ]
+    },
+    "quiz3": {
+        "q1_prompt": "When you're calling a friend on the telephone, it is important to:",
+        "q1_options": [
+            "Tell them your first and last name and where you go to school",
+            "Have a cover story for calling"
+        ],
+        "q2_prompt": "When you're calling a peer on the telephone:",
+        "q2_options": [
+            "Avoid cold calling",
+            "Let them do most of the talking"
+        ],
+        "topic_answers": [
+            2,
+            1
+        ]
+    },
+    "quiz4": {
+        "q1_prompt": "It's ALWAYS a good idea to make friends with someone who:",
+        "q1_options": [
+            "Is more popular than you",
+            "Likes the same things as you"
+        ],
+        "q2_prompt": "It's a good idea to have a social group because:",
+        "q2_options": [
+            "You're more likely to be popular",
+            "It protects you from bullying"
+        ],
+        "topic_answers": [
+            2,
+            2
+        ]
+    },
+    "quiz5": {
+        "q1_prompt": "When you first meet someone, it is important to:",
+        "q1_options": [
+            "To be funny and make them laugh",
+            "To be a little more serious"
+        ],
+        "q2_prompt": "After you make a joke, it's a good idea to pay attention to:",
+        "q2_options": [
+            "Whether the other person is laughing",
+            "Your humor feedback"
+        ],
+        "topic_answers": [
+            2,
+            2
+        ]
+    }
+}

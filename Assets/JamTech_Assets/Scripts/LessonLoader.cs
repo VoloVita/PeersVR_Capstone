@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 using TMPro;
 using UnityEngine.Video;
 using UnityEngine.Events;
 using System.Diagnostics;
+using Better.StreamingAssets;
+
 
 
 public class LessonLoader : MonoBehaviour
@@ -43,11 +46,9 @@ public class LessonLoader : MonoBehaviour
     
     
 
-    void Start()
+    void Awake()
     {
-      //  lessonData = JSONFile.text;
-     //   lesson_content = GameObject.Find("LessonContent");
-     //   UnityEngine.Debug.Log(lesson_content);
+        BetterStreamingAssets.Initialize();
     }
 
     public void changeLesson(int number){
@@ -346,7 +347,18 @@ public class LessonLoader : MonoBehaviour
 
     public void ChangeVideo(string url)
     {
-        video_output.url = url;
+        string fullPath = Path.Combine(Application.streamingAssetsPath, url);
+
+    if (BetterStreamingAssets.FileExists(url))
+    {
+        byte[] videoBytes = BetterStreamingAssets.ReadAllBytes(url);
+        string tempFilePath = Path.Combine(Application.persistentDataPath, "tempVideo.mp4");
+        File.WriteAllBytes(tempFilePath, videoBytes);
+
+        // Assign the URL or path to the VideoPlayer
+        video_output.url = tempFilePath;
+        video_output.Play();
+    }
     }
 
     public void VideoClicked()
@@ -371,7 +383,7 @@ public class LessonLoader : MonoBehaviour
     public Sprite LoadSpriteFromFile(string path)
     {
         // Read the bytes from the file
-        byte[] fileData = System.IO.File.ReadAllBytes(path);
+        byte[] fileData = BetterStreamingAssets.ReadAllBytes(path);
 
         // Create a texture and load the bytes into it
         Texture2D texture = new Texture2D(2, 2);

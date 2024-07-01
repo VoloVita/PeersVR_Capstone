@@ -15580,9 +15580,9 @@ RectTransform:
   m_Father: {fileID: 1521275037}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 750, y: -42}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1500, y: 350}
   m_Pivot: {x: 0.5, y: 0.88}
 --- !u!114 &354391426
@@ -25437,9 +25437,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -17}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &464695520
 MonoBehaviour:
@@ -53324,8 +53324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e770cf4684f72d3499c1bfebece5083a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lessonJSONFile: {fileID: 4900000, guid: be3753df23433c64a8aec5f050856a77, type: 3}
-  quizJSONFile: {fileID: 4900000, guid: 83a1e77a8be044984b6f01ab89d4c88c, type: 3}
 --- !u!114 &1158324034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66076,7 +66074,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000120162964, y: 0.000015259}
-  m_SizeDelta: {x: 715, y: 350}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1521275038
 MonoBehaviour:
@@ -68293,7 +68291,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5233334, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -77391,7 +77389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1855222670
 MonoBehaviour:
   m_ObjectHideFlags: 0

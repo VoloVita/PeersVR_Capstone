@@ -2,50 +2,59 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using Better.StreamingAssets;
 
 public class Jsonconfig : MonoBehaviour
 {
-    private string lessonDataFilePath = "Assets/JamTech_Assets/JSON/lesson.json";
-    private string quizDataFilePath = "Assets/JamTech_Assets/JSON/quiz.json";
-    public TextAsset lessonJSONFile;
-    public TextAsset quizJSONFile;
+    private string lessonDataFilePath = "JSON/lesson.json";
+    private string quizDataFilePath = "JSON/quiz.json";
 
+    void Awake()
+    {
+        BetterStreamingAssets.Initialize();
+    }
 
     /// <summary>
     ///  This function opens the content JSON file and makes a playerData object
     /// </summary>
-    /// <returns></returns> Returns a playerData object
+    /// <returns>Returns a playerData object</returns>
     public LessonData LoadLessonData()
     {
-       // if (File.Exists(lessonDataFilePath))
-     //   {
-          //  string json = File.ReadAllText(lessonDataFilePath);
-            string json = lessonJSONFile.text;
-            return JsonUtility.FromJson<LessonData>(json);
-       // }
- //       else
- //       {
-  //          Debug.LogError("Lesson data file not found!");
-  //          return null;
-  //      }
+        if (BetterStreamingAssets.FileExists(lessonDataFilePath))
+        {
+            using (var stream = BetterStreamingAssets.OpenRead(lessonDataFilePath))
+            using (var reader = new StreamReader(stream))
+            {
+                string json = reader.ReadToEnd();
+                return JsonUtility.FromJson<LessonData>(json);
+            }
+        }
+        else
+        {
+            Debug.LogError("Lesson data file not found: " + lessonDataFilePath);
+            return null;
+        }
     }
 
     /// <summary>
     ///  This function opens the content JSON file and makes a quizData object
     /// </summary>
-    /// <returns></returns> Returns a quizData object
+    /// <returns>Returns a quizData object</returns>
     public QuizData LoadQuizData()
     {
-      //  if (File.Exists(quizDataFilePath))
-      //  {
-        //    string json = File.ReadAllText(quizDataFilePath);
-            string json = quizJSONFile.text;
-            return JsonUtility.FromJson<QuizData>(json);
-       // }
- //       else
- //       {
- //           Debug.LogError("Quiz data file not found!");
- //           return null;
- //       }
+        if (BetterStreamingAssets.FileExists(quizDataFilePath))
+        {
+            using (var stream = BetterStreamingAssets.OpenRead(quizDataFilePath))
+            using (var reader = new StreamReader(stream))
+            {
+                string json = reader.ReadToEnd();
+                return JsonUtility.FromJson<QuizData>(json);
+            }
+        }
+        else
+        {
+            Debug.LogError("Quiz data file not found: " + quizDataFilePath);
+            return null;
+        }
     }
 }
