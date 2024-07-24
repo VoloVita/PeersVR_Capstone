@@ -112,7 +112,7 @@
             "Ending phone calls",
             "Entering Online Individual Conversation",
             "Exiting Online Individual Conversation",
-            "Leaving a voicemail.jpg"
+            "Leaving a voicemail"
         ],
         "example_titles": [
             "Exchanging Contact Information",
@@ -208,6 +208,559 @@
             "Enroll in extracurricular activities",
             "Practice using electronic communication with your social coach",
             "Practice trading information with a peer this week"
+        ],
+        "quiz_url": "url"
+    },
+    "lesson6": {
+        "title": "Starting and Entering Conversations",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_6/thumbnails/PEERS - Starting individual conversations (bad).jpg",
+            "PeersVideosContent/topic_6/thumbnails/PEERS - Starting individual conversations online (Bad).jpg",
+            "PeersVideosContent/topic_6/thumbnails/PEERS - Entering group conversations (bad).jpg",
+            "PeersVideosContent/topic_6/thumbnails/PEERS - Entering group conversations online (Bad).jpg"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_6/thumbnails/PEERS - Starting individual conversations (good).jpg",
+            "PeersVideosContent/topic_6/thumbnails/PEERS - Starting individual conversations online (Good).jpg",
+            "PeersVideosContent/topic_6/thumbnails/PEERS - Entering group conversations (good).jpg",
+            "PeersVideosContent/topic_6/thumbnails/PEERS - Entering group conversations online (Good).jpg"
+        ],
+        "non_example_titles": [
+            "Starting individual conversations",
+            "Starting individual conversations online",
+            "Entering group conversations",
+            "Entering group conversations online"
+        ],
+        "example_titles": [
+            "Starting individual conversations",
+            "Starting individual conversations online",
+            "Entering group conversations",
+            "Entering group conversations online"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_6/videos/PEERS - Starting individual conversations (bad).mp4",
+            "PeersVideosContent/topic_6/videos/PEERS - Starting individual conversations online (Bad).mp4",
+            "PeersVideosContent/topic_6/videos/PEERS - Entering group conversations (bad).mp4",
+            "PeersVideosContent/topic_6/videos/PEERS - Entering group conversations online (Bad).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_6/videos/PEERS - Starting individual conversations (good).mp4",
+            "PeersVideosContent/topic_6/videos/PEERS - Starting individual conversations online (Good).mp4",
+            "PeersVideosContent/topic_6/videos/PEERS - Entering group conversations (good).mp4",
+            "PeersVideosContent/topic_6/videos/PEERS - Entering group conversations online (Good).mp4"
+        ],
+        "description": "In this level, you will be learning how to start and enter conversations with people you want to know better. When trying to meet new people, we are sometimes given the advice to go up and say\"hi\" or introduce ourselves - this is bad advice. Simply interrupting to say hello or introduce ourselves would seem odd or random and would likely result in rejection. Instead the rules for starting and entering conversations with casual acquaintances are very specific and are presented below. Although these steps are not required for people we already know well, they can be used when starting or entering conversations with any type of friendship.",
+        "more_info": "",
+        "exercises":[
+            "Practice starting an individual conversation and entering a group conversation with peers this week.",
+            "Pay attention to your humor feedback if you happen to tell a joke.",
+            "Enroll in extra curricular activities.",
+            "Practice using electronic communication with your social coach"
+            
+        ],
+        "quiz_url": "url"
+    },
+    "lesson7": {
+        "title": "Exiting Conversations",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting with never accepted (bad).jpg",
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting online conversation when never accepted (Bad).jpg",
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting group fully accepted (bad).jpg",
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting online conversation when fully accepted (Bad).jpg"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting group never accepted (good).jpg",
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting online conversation when never accepted (Good).jpg",
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting when initially accepted and then excluded (good).jpg",
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting online conversation when initially accepted and then excluded (Good).jpg",
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting when fully accepted (good).jpg",
+            "PeersVideosContent/topic_7/thumbnails/PEERS - Exiting online conversation when fully accepted (Good).jpg"
+        ],
+        "non_example_titles": [
+            "Exiting with never accepted",
+            "Exiting online conversation when never accepted",
+            "Exiting group fully accepted",
+            "Exiting online conversation when fully accepted"
+        ],
+        "example_titles": [
+            "Exiting group never accepted",
+            "Exiting online conversation when never accepted",
+            "Exiting when initially accepted and then excluded",
+            "Exiting online conversation when initially accepted and then excluded",
+            "Exiting when fully accepted",
+            "Exiting online conversation when fully accepted"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting with never accepted (bad).mp4",
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting online conversation when never accepted (Bad).mp4",
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting group fully accepted (bad).mp4",
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting online conversation when fully accepted (Bad).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting group never accepted (good).mp4",
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting online conversation when never accepted (Good).mp4",
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting when initially accepted and then excluded (good).mp4",
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting online conversation when initially accepted and then excluded (Good).mp4",
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting when fully accepted (good).mp4",
+            "PeersVideosContent/topic_7/videos/PEERS - Exiting online conversation when fully accepted (Good).mp4"
+        ],
+        "description":"In this level you will be learning how to exit conversations. Approximately 50% of attempts to enter conversations are unsuccesful. And that is okay, it happens to everyone and is often not personal. Don't let this stop you from trying to join converations in the future. There are many different reasons why you might not be accepted when you try to join a conversation, it is important to think about why we might have been turned down and what we can do differently next time.",
+        "more_info": "",
+        "exercises":[
+            "Practice starting, entering, and exiting conversations with peers this week.",
+            "Pay attention to your humor feedback if you happen to tell a joke.",
+            "Enroll in extracurricular activites."    
+        ],
+        "quiz_url": "url"
+    },
+    "lesson8": {
+        "title": "Good Sportsmanship",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Dont cheat (bad).jpg",
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Dont referee (bad).jpg",
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Dont coach (Bad).jpg",
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Dont be competitive (Bad).jpg",
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Help and show concern if someone is injured (Bad).jpg",
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Suggest a change if bored (Bad).jpg",
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Dont be a bad winner (bad).jpg",
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Dont be a sore loser (Bad).jpg"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_8/thumbnails/PEERS - Being a good sport (Good).jpg"
+        ],
+        "non_example_titles": [
+            "Dont cheat",
+            "Dont referee",
+            "Dont coach",
+            "Dont be competitive",
+            "Help and show concern if someone is injured",
+            "Suggest a change if bored",
+            "Dont be a bad winner",
+            "Dont be a sore loser"
+        ],
+        "example_titles": [
+            "Being a good sport"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_8/videos/PEERS - Dont cheat (bad).mp4",
+            "PeersVideosContent/topic_8/videos/PEERS - Dont referee (bad).mp4",
+            "PeersVideosContent/topic_8/videos/PEERS - Dont coach (Bad).mp4",
+            "PeersVideosContent/topic_8/videos/PEERS - Dont be competitive (Bad).mp4",
+            "PeersVideosContent/topic_8/videos/PEERS - Help and show concern if someone is injured (Bad).mp4",
+            "PeersVideosContent/topic_8/videos/PEERS - Suggest a change if bored (Bad).mp4",
+            "PeersVideosContent/topic_8/videos/PEERS - Dont be a bad winner (bad).mp4",
+            "PeersVideosContent/topic_8/videos/PEERS - Dont be a sore loser (Bad).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_8/videos/PEERS - Being a good sport (Good).mp4"
+        ],
+        "description": "In this level, you will be learning how to be a good sport during games and sports activities. There are very specific rules for being a good sport. The main goal of playing games and sports with friends is that everyone enjoys themselves. That is why it is important that we use good sportsmanship when we play videogames, computer games, board games, or sports. If we use poor sportsmanship while playing games and sports, our friends may no longer want to play with us and we may even get a bad reputation.",
+        "more_info": "",
+        "exercises":[
+            "Practice being a good sport.",
+            "Practice starting, entering, and exiting conversations with peers this week.",
+            "Pay attention to your humor feedback if you happen to tell a joke.",
+            "Enroll in extra curricular activities."    
+        ],
+        "quiz_url": "url"
+    },
+    "lesson9": {
+        "title": "Get-Togethers",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_9/thumbnails/PEERS - Beginning get together (bad).png",
+            "PeersVideosContent/topic_9/thumbnails/PEERS - Ending a get-together (bad).png"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_9/thumbnails/PEERS - Beginning a get-together (good).png",
+            "PeersVideosContent/topic_9/thumbnails/PEERS - Ending a Get-together (good).png"
+        ],
+        "non_example_titles": [
+            "Beginning get together",
+            "Ending a get-together"
+        ],
+        "example_titles": [
+            "Beginning a get-together",
+            "Ending a Get-together"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_9/videos/PEERS - Beginning get together (bad).mp4",
+            "PeersVideosContent/topic_9/videos/PEERS - Ending a get-together (bad).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_9/videos/PEERS - Beginning a get-together (good).mp4",
+            "PeersVideosContent/topic_9/videos/PEERS - Ending a Get-together (good).mp4"
+        ],
+        "description": "In this level, you will be learning how to have successful get-togethers with perrs. Having get-togethers is an important part of developing friendships. Specific suggestions about how to have a successful get-together are provided below. Get-togethers should be activity based whenever possible to avoid boredom and take the pressure off from having to talk the whole time. Activites should be based on the common interests of everyone.",
+        "more_info": "",
+        "exercises":[
+            "Have a get together with a friend",
+            "Practice starting, entering, and exiting conversations with peers this week.",
+            "Pay attention to your humor feedback if you happen to tell a joke.",
+            "Enroll in extra curricular activities."    
+        ],
+        "quiz_url": "url"
+    },
+    "lesson10": {
+        "title": "Dating Etiquette: Letting Someone Know You Like Them",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_10/thumbnails/PEERS - Flirting with your eyes (bad).png",
+            "PeersVideosContent/topic_10/thumbnails/PEERS - Asking if they're dating anyone (bad).png",
+            "PeersVideosContent/topic_10/thumbnails/PEERS - Giving compliments (bad).png"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_10/thumbnails/PEERS - Talking to a mutual friend (good).png",
+            "PeersVideosContent/topic_10/thumbnails/PEERS - Flirting with your eyes (good).png",
+            "PeersVideosContent/topic_10/thumbnails/PEERS - Asking if theyre dating anyone (good).png",
+            "PeersVideosContent/topic_10/thumbnails/PEERS - Giving compliments (good).png"
+        ],
+        "non_example_titles": [
+            "Flirting with your eyes",
+            "Asking if they're dating anyone",
+            "Giving compliments"
+        ],
+        "example_titles": [
+            "Talking to a mutual friend",
+            "Flirting with your eyes",
+            "Asking if theyre dating anyone",
+            "Giving compliments"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_10/videos/PEERS - Flirting with your eyes (bad).mp4",
+            "PeersVideosContent/topic_10/videos/PEERS - Asking if they're dating anyone (bad).mp4",
+            "PeersVideosContent/topic_10/videos/PEERS - Giving compliments (bad).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_10/videos/PEERS - Talking to a mutual friend (good).mp4",
+            "PeersVideosContent/topic_10/videos/PEERS - Flirting with your eyes (good).mp4",
+            "PeersVideosContent/topic_10/videos/PEERS - Asking if theyre dating anyone (good).mp4",
+            "PeersVideosContent/topic_10/videos/PEERS - Giving compliments (good).mp4"
+        ],
+        "description": "In this level, you will be learning about dating etiquette. By now, you've learned some of the basic elements for making and keeping friends. The social skills needed for making and keeping friends are also used in dating. That's because you need to know how to be a friend in order to be more than a friend. The goal of the next several sessions is to provide you with some basic tools for dating that go beyond friendship status. To start we're going to talk about finding and choosing people to date and how to let someone know you like them.",
+        "more_info": "",
+        "exercises":[
+            "Practice letting someone know you like them.",
+            "Have a get together with a friend.",
+            "Practice starting, entering, and exiting conversations with peers this week.",
+            "Pay attention to your humor feedback if you happen to tell a joke."
+        ],
+        "quiz_url": "url"
+    },
+    "lesson11": {
+        "title": "Dating Etiquette: Asking Someone on a Date",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_11/thumbnails/PEERS - Asking someone on a date (bad).png",
+            "PeersVideosContent/topic_11/thumbnails/PEERS - Accepting rejection (bad).png",
+            "PeersVideosContent/topic_11/thumbnails/PEERS - Turning someone down (bad).png"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_11/thumbnails/PEERS - Asking someone on a date (good).png",
+            "PeersVideosContent/topic_11/thumbnails/PEERS - Accepting rejection (good).png",
+            "PeersVideosContent/topic_11/thumbnails/PEERS - Turning someone down (good).png"
+        ],
+        "non_example_titles": [
+            "Asking someone on a date",
+            "Accepting rejection",
+            "Turning someone down"
+        ],
+        "example_titles": [
+            "Asking someone on a date",
+            "Accepting rejection",
+            "Turning someone down"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_11/videos/PEERS - Asking someone on a date (bad).mp4",
+            "PeersVideosContent/topic_11/videos/PEERS - Accepting rejection (bad).mp4",
+            "PeersVideosContent/topic_11/videos/PEERS - Turning someone down (bad).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_11/videos/PEERS - Asking someone on a date (good).mp4",
+            "PeersVideosContent/topic_11/videos/PEERS - Accepting rejection (good).mp4",
+            "PeersVideosContent/topic_11/videos/PEERS - Turning someone down (good).mp4"
+        ],
+        "description": "In this level, you will continue to learn about dating etiquette. In level 10, we talked about who to date, where to find people to date, and how to let someone know you like them. In this lesson, we're going to talk about how to ask somone on a date.",
+        "more_info": "",
+        "exercises":[
+            "Practice the following skills for dating etiquette with a social coach",
+            "Practice letting someone know you like them.",
+            "Have a get-together with a friend",
+            "Practice starting, entering, and exiting conversations with peers this week."
+        ],
+        "quiz_url": "url"
+    },
+    "lesson12": {
+        "title": "Dating Etiquette: Going on Dates",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Beginning a Date (bad).png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Beginning an Online Date (bad).png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Share Too Much Personal Information at First.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Ask too Many Personal Questions at First.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Share Lack of Dating Experience.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Share Bad Dating Experiences at First.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Talk About Ex's At First.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Talk About Your Feelings At First.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Make All The Decisions.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Avoid Risky Topics.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Flirt with Other People.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Invite People Unexpectedly into Your Date.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Don't Ignore Your Date.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Stay Off Your Electronics.png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Suggest A Change If Bored (Bad).png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Ending a Date (bad).png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Ending an Online Date (Bad).png"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Beginning a Date (good).png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Beginning an Online Date (Good).png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Suggest A Change If Bored (Good).png",
+            "PeersVideosContent/topic_12/thumbnails/PEERS - Two-Offer Rule.png"
+        ],
+        "non_example_titles": [
+            "Beginning a Date",
+            "Beginning an Online Date",
+            "Turning someone down",
+            "Don't Share Too Much Personal Information at First",
+            "Don't Ask too Many Personal Questions at First",
+            "Don't Share Lack of Dating Experience",
+            "Don't Share Bad Dating Experiences at First",
+            "Don't Talk About Ex's At First",
+            "Don't Talk About Your Feelings At First",
+            "Don't Make All The Decisions",
+            "Avoid Risky Topics",
+            "Don't Flirt with Other People",
+            "Don't Invite People Unexpectedly into Your Date",
+            "Don't Ignore Your Date",
+            "Stay Off Your Electronics",
+            "Suggest A Change If Bored",
+            "Ending a Date",
+            "Ending an Online Date"
+        ],
+        "example_titles": [
+            "Beginning a Date",
+            "Beginning an Online Date",
+            "Suggest A Change If Bored",
+            "Two-Offer Rule"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_12/videos/PEERS - Beginning a Date (bad).mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Beginning an Online Date (bad).mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Share Too Much Personal Information at First.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Ask too Many Personal Questions at First.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Share Lack of Dating Experience.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Share Bad Dating Experiences at First.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Talk About Ex's At First.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Talk About Your Feelings At First.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Make All The Decisions.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Avoid Risky Topics.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Flirt with Other People.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Invite People Unexpectedly into Your Date.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Don't Ignore Your Date.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Stay Off Your Electronics.mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Suggest A Change If Bored (Bad).mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Ending a Date (bad).mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Ending an Online Date (Bad).mp4"
+            
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_12/videos/PEERS - Beginning a Date (good).mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Beginning an Online Date (Good).mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Suggest A Change If Bored (Good).mp4",
+            "PeersVideosContent/topic_12/videos/PEERS - Two-Offer Rule.mp4"
+        ],
+        "description": "In this level, you will continue to learn about dating etiquette. So far, you've learned about how to let someone know you like them and how to ask someone out on a date. In this lesson, we're going to talk about going on dates. There are several phases for going on dates, including: planning the date, preparing for the date, staying safe on the date, beginning the date, during the date, ending the date, and after the date. We will talk about what you need to do during each of these phases.",
+        "more_info": "",
+        "exercises":[
+            "Practice letting someone know you like them asking them on a date, and/or going on a date.",
+            "Practice the following skills for dating etiquette with a social coach",
+            "Have a get-together with a friend"
+        ],
+        "quiz_url": "url"
+    },
+    "lesson13": {
+        "title": "Dating Etiquette: Relationship Boundaries",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_13/thumbnails/PEERS - Disclosing a Diagnosis (Bad).png",
+            "PeersVideosContent/topic_13/thumbnails/PEERS - Don't Rush The Relationship (Bad).png",
+            "PeersVideosContent/topic_13/thumbnails/PEERS - Don't Assume You're A Couple (Bad).png",
+            "PeersVideosContent/topic_13/thumbnails/PEERS - Defining The Relationship (Bad).png",
+            "PeersVideosContent/topic_13/thumbnails/PEERS - Handling dating pressure from a partner (bad).png"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_13/thumbnails/PEERS - Disclosing a Diagnosis (Good).png",
+            "PeersVideosContent/topic_13/thumbnails/PEERS - Defining The Relationship (Good).png",
+            "PeersVideosContent/topic_13/thumbnails/PEERS - Handling dating pressure from a partner (good).png"
+        ],
+        "non_example_titles": [
+            "Disclosing a Diagnosis",
+            "Don't Rush The Relationship",
+            "Don't Assume You're A Couple",
+            "Defining The Relationship",
+            "Handling dating pressure from a partner"
+        ],
+        "example_titles": [
+            "Disclosing a Diagnosis",
+            "Defining The Relationship",
+            "Handling dating pressure from a partner"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_13/videos/PEERS - Disclosing a Diagnosis (Bad).mp4",
+            "PeersVideosContent/topic_13/videos/PEERS - Don't Rush The Relationship (Bad).mp4",
+            "PeersVideosContent/topic_13/videos/PEERS - Don't Assume You're A Couple (Bad).mp4",
+            "PeersVideosContent/topic_13/videos/PEERS - Defining The Relationship (Bad).mp4",
+            "PeersVideosContent/topic_13/videos/PEERS - Handling dating pressure from a partner (bad).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_13/videos/PEERS - Disclosing a Diagnosis (Good).mp4",
+            "PeersVideosContent/topic_13/videos/PEERS - Defining The Relationship (Good).mp4",
+            "PeersVideosContent/topic_13/videos/PEERS - Handling dating pressure from a partner (good).mp4"
+         ],
+        "description": "In this level, you will continue to learn about dating etiquette. So far, we've talked about how to let someone know you like them, how to ask someone on a date, and how to have a successful date. The level will focus on the rules for establishing appropriate relationship boundaries.",
+        "more_info": "",
+        "exercises":[
+            "Practice letting someone know you like them asking them on a date, and/or going on a date.",
+            "Practice the following skills for dating etiquette with a social coach.",
+            "Have a get-together with a friend"
+        ],
+        "quiz_url": "url"
+    },
+    "lesson14": {
+        "title": "Handling Disagreements",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Responding to a disagreement (Incomplete A).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Responding to a disagreement (Incomplete B).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Responding to a disagreement (Incomplete C).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Responding to a disagreement (Incomplete D).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Bringing up a disagreement (Incomplete A).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Bringing up a disagreement (Incomplete B).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Bringing up a disagreement (Incomplete C).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Bringing up a disagreement (Incomplete D).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Bringing up a disagreement (Incomplete E).png"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Responding to a disagreement (Complete).png",
+            "PeersVideosContent/topic_14/thumbnails/PEERS - Bringing up a disagreement (Complete).png"
+        ],
+        "non_example_titles": [
+            "Responding to a disagreement (Incomplete A)",
+            "Responding to a disagreement (Incomplete B)",
+            "Responding to a disagreement (Incomplete C)",
+            "Responding to a disagreement (Incomplete D)",
+            "Responding to a disagreement (Incomplete E)",
+            "Bringing up a disagreement (Incomplete A)",
+            "Bringing up a disagreement (Incomplete B)",
+            "Bringing up a disagreement (Incomplete C)",
+            "Bringing up a disagreement (Incomplete D)",
+            "Bringing up a disagreement (Incomplete E)"
+        ],
+        "example_titles": [
+            "Responding to a disagreement (Complete)",
+            "Bringing up a disagreement (Complete)"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_14/videos/PEERS - Responding to a disagreement (Incomplete A).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Responding to a disagreement (Incomplete B).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Responding to a disagreement (Incomplete C).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Responding to a disagreement (Incomplete D).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Bringing up a disagreement (Incomplete A).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Bringing up a disagreement (Incomplete B).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Bringing up a disagreement (Incomplete C).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Bringing up a disagreement (Incomplete D).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Bringing up a disagreement (Incomplete E).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_14/videos/PEERS - Responding to a disagreement (Complete).mp4",
+            "PeersVideosContent/topic_14/videos/PEERS - Bringing up a disagreement (Complete).mp4"
+         ],
+        "description": "In this level, you will learn how to handle disagreements. Arguments and disagreements with friends or romatical partners are commone, and occasional arguments that aren't too explosive shouldn't have to end your friendship or relationship. Because occasional disagreements are common, it's important to know how to manage them so they don't hurt our friendships or relationships. There are two positions we may find ourselves in when it comes to disagreements. Someone might be upset with us, where we have to RESPOND to a disagreement, or we might be upset with someone, where we have to BRING UP a disagreement.",
+        "more_info": "",
+        "exercises":[
+            "Practice handling a disagreement.",
+            "Practice letting someone know you like them, asking them on a date, and/or going on a date.",
+            "Practice the following skills for dating etiquette with a social coach",
+            "Have a get-together with a friend."
+        ],
+        "quiz_url": "url"
+    },
+    "lesson15": {
+        "title": "Handling Direct Bullying",
+        "non_example_thumbnails": [
+            
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_15/thumbnails/PEERS - Handling teasing - Having an attitude.png",
+            "PeersVideosContent/topic_15/thumbnails/PEERS - Handling teasing - Sounding bored.png"
+        ],
+        "non_example_titles": [
+            
+        ],
+        "example_titles": [
+            "Handling teasing - Having an attitude",
+            "Handling teasing - Sounding bored"
+        ],
+        "non_example_videos": [
+            
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_15/videos/PEERS - Handling teasing - Having an attitude.mp4",
+            "PeersVideosContent/topic_15/videos/PEERS - Handling teasing - Sounding bored.mp4"
+         ],
+        "description": "In this level, you will learn how to handle direct bullying. We know bullying is very common among adolescents, and unfortunately it also happens with adults. This level will provide strategies for handling DIRECT bullying, such as teasing and physical bullying because they happen directly to the person targeted and not over the internet or behind their back. In the next level, you will learn about handling indirect forms of bullying, such as cyberbullying, rumors, and gossip.",
+        "more_info": "",
+        "exercises":[
+            "Practice handling a disagreement.",
+            "Practice letting someone know you like them, asking them on a date, and/or going on a date.",
+            "Practice the following skills for dating etiquette with a social coach",
+            "Have a get-together with a friend."
+        ],
+        "quiz_url": "url"
+    },
+    "lesson16": {
+        "title": "Handling Indirect Bullying",
+        "non_example_thumbnails": [
+            "PeersVideosContent/topic_16/thumbnails/PEERS - Spread the rumor about yourself (bad).png"
+        ],
+        "example_thumbnails": [
+            "PeersVideosContent/topic_16/thumbnails/PEERS - Spread the rumpr about yourself (good).png"
+        ],
+        "non_example_titles": [
+            "Spread the rumor about yourself"
+        ],
+        "example_titles": [
+            "Spread the rumor about yourself"
+        ],
+        "non_example_videos": [
+            "PeersVideosContent/topic_16/videos/PEERS - Spread the rumor about yourself (bad).mp4"
+        ],
+        "example_videos": [
+            "PeersVideosContent/topic_16/videos/PEERS - Spread the rumor about yourself (Good).mp4"
+         ],
+        "description": "In this level, you will learn how to handle INDIRECT forms of bullying, such as cyberbullying, rumors, and gossip. These are INDIRECT forms of bullying because they usually happen over the internet or behind our back. Just like bullying behaviors are completely different, the strategies for handling these different types of bullying are also very different.",
+        "more_info": "",
+        "exercises":[
+            "Practice handling a disagreement.",
+            "Practice letting someone know you like them, asking them on a date, and/or going on a date.",
+            "Practice the following skills for dating etiquette with a social coach",
+            "Have a get-together with a friend."
+        ],
+        "quiz_url": "url"
+    },
+    "lesson17": {
+        "title": "Final Review",
+        "non_example_thumbnails": [
+        ],
+        "example_thumbnails": [
+        ],
+        "non_example_titles": [
+        ],
+        "example_titles": [
+        ],
+        "non_example_videos": [
+        ],
+        "example_videos": [
+         ],
+        "description": "In this level, you will be given suggestions about where to go from here. Feel free to refer back to the previous levels to refresh your memory about the strategies for making and keeping friends, dating etiquette, and handling conflict and rejection. Like any newly learned skills, the strategies taught in PEERS require lots of rehearsals, so don't forget to keep practicing!",
+        "more_info": "",
+        "exercises":[
+            
         ],
         "quiz_url": "url"
     }

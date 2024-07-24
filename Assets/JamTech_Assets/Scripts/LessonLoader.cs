@@ -75,6 +75,42 @@ public class LessonLoader : MonoBehaviour
             case 5:
                 lesson = lessonData.lesson5;
                 break;
+            case 6:
+                lesson = lessonData.lesson6;
+                break;
+            case 7:
+                lesson = lessonData.lesson7;
+                break;
+            case 8:
+                lesson = lessonData.lesson8;
+                break;
+            case 9:
+                lesson = lessonData.lesson9;
+                break;
+            case 10:
+                lesson = lessonData.lesson10;
+                break;
+            case 11:
+                lesson = lessonData.lesson11;
+                break;
+            case 12:
+                lesson = lessonData.lesson12;
+                break;
+            case 13:
+                lesson = lessonData.lesson13;
+                break;
+            case 14:
+                lesson = lessonData.lesson14;
+                break;
+            case 15:
+                lesson = lessonData.lesson15;
+                break;
+            case 16:
+                lesson = lessonData.lesson16;
+                break;
+            case 17:
+                lesson = lessonData.lesson17;
+                break;
             default:
                 lesson = lessonData.lesson1;
                 break;
@@ -110,6 +146,42 @@ public class LessonLoader : MonoBehaviour
                 break;
             case 5:
                 lesson = lessonData.lesson5;
+                break;
+            case 6:
+                lesson = lessonData.lesson6;
+                break;
+            case 7:
+                lesson = lessonData.lesson7;
+                break;
+            case 8:
+                lesson = lessonData.lesson8;
+                break;
+            case 9:
+                lesson = lessonData.lesson9;
+                break;
+            case 10:
+                lesson = lessonData.lesson10;
+                break;
+            case 11:
+                lesson = lessonData.lesson11;
+                break;
+            case 12:
+                lesson = lessonData.lesson12;
+                break;
+            case 13:
+                lesson = lessonData.lesson13;
+                break;
+            case 14:
+                lesson = lessonData.lesson14;
+                break;
+            case 15:
+                lesson = lessonData.lesson15;
+                break;
+            case 16:
+                lesson = lessonData.lesson16;
+                break;
+            case 17:
+                lesson = lessonData.lesson17;
                 break;
             default:
                 lesson = lessonData.lesson1;
@@ -274,6 +346,42 @@ public class LessonLoader : MonoBehaviour
             case 5:
                 quiz = quizData.quiz5;
                 break;
+            case 6:
+                quiz = quizData.quiz6;
+                break;
+            case 7:
+                quiz = quizData.quiz7;
+                break;
+            case 8:
+                quiz = quizData.quiz8;
+                break;
+            case 9:
+                quiz = quizData.quiz9;
+                break;
+            case 10:
+                quiz = quizData.quiz10;
+                break;
+            case 11:
+                quiz = quizData.quiz11;
+                break;
+            case 12:
+                quiz = quizData.quiz12;
+                break;
+            case 13:
+                quiz = quizData.quiz13;
+                break;
+            case 14:
+                quiz = quizData.quiz14;
+                break;
+            case 15:
+                quiz = quizData.quiz15;
+                break;
+            case 16:
+                quiz = quizData.quiz16;
+                break;
+            case 17:
+                quiz = quizData.quiz17;
+                break;
             default:
                 quiz = quizData.quiz1;
                 break;
@@ -383,6 +491,8 @@ public class LessonLoader : MonoBehaviour
     public Sprite LoadSpriteFromFile(string path)
     {
         // Read the bytes from the file
+        if (!BetterStreamingAssets.FileExists(path))
+        { UnityEngine.Debug.Log(path);}
         byte[] fileData = BetterStreamingAssets.ReadAllBytes(path);
 
         // Create a texture and load the bytes into it
