@@ -78,5 +78,181 @@
             2,
             2
         ]
+    },
+    "quiz6": {
+        "q1_prompt": "When starting an individual conversation, the FIRST thing you should do is:",
+        "q1_options": [
+            "Casually look over",
+            "Say hello and introduce yourself"
+        ],
+        "q2_prompt": "When you're trying to join a group conversation, the FIRST thing you should do is:",
+        "q2_options": [
+            "Watch and listen to observe the conversation",
+            "Make a comment about what they're saying"
+        ],
+        "topic_answers": [
+            1,
+            1
+        ]
+    },
+    "quiz7": {
+        "q1_prompt": "If you have joined a conversation and the people start to exclude you:",
+        "q1_options": [
+            "Give a cover story for leaving",
+            "Make sure they can hear you"
+        ],
+        "q2_prompt": "If you try to join ten different how many time out of ten are you likely to be rejected:",
+        "q2_options": [
+            "7 out of 10",
+            "5 out of 10"
+        ],
+        "topic_answers": [
+            1,
+            2
+        ]
+    },
+    "quiz8": {
+        "q1_prompt": "People like to play sports with others who:",
+        "q1_options": [
+            "Score points and play well",
+            "Praise them"
+        ],
+        "q2_prompt": "When people aren't playing by the rules:",
+        "q2_options": [
+            "Nicely remind them what the rules are",
+            "Don't referee them"
+        ],
+        "topic_answers": [
+            1,
+            2
+        ]
+    },
+    "quiz9": {
+        "q1_prompt": "When having a friend over for a get-together at your home:",
+        "q1_options": [
+            "Tell your friend what you're going to do",
+            "Have your friend choose the activity"
+        ],
+        "q2_prompt": "If you're having a friend over for a get-together and someone else unexpectedly texts and wants to hang out:",
+        "q2_options": [
+            "Invite your other friend over",
+            "Tell them that you're busy and will text them later"
+        ],
+        "topic_answers": [
+            2,
+            2
+        ]
+    },
+    "quiz10": {
+        "q1_prompt": "When you're interested in someone romatically, it's a good idea to:",
+        "q1_options": [
+            "Talk to mutual friends",
+            "Don't tell people until you're sure they like you"
+        ],
+        "q2_prompt": "When you're flirting with someone, you should make eye contact, smile, and keep looking at them:",
+        "q2_options": [
+            "True",
+            "False"
+        ],
+        "topic_answers": [
+            1,
+            2
+        ]
+    },
+    "quiz11": {
+        "q1_prompt": "When you're asking someone on a date, you should:",
+        "q1_options": [
+            "Tell them you like them and ask if they'll go out with you",
+            "Ask what they're doing on a certain day and time"
+        ],
+        "q2_prompt": "If you ask someone on a date and they turn you down, it's okay to politely ask them for a reason:",
+        "q2_options": [
+            "Whether the other person is laughing",
+            "Your humor feedback"
+        ],
+        "topic_answers": [
+            2,
+            2
+        ]
+    },
+    "quiz12": {
+        "q1_prompt": "At the end of a date, if you want to kiss goodnight, you should:",
+        "q1_options": [
+            "Ask your date if you can kiss them",
+            "Wait for a sign they want to be kissed"
+        ],
+        "q2_prompt": "When you're on a first date it's a good idea to give general compliments:",
+        "q2_options": [
+            "True",
+            "False"
+        ],
+        "topic_answers": [
+            1,
+            2
+        ]
+    },
+    "quiz13": {
+        "q1_prompt": "When you FIRST start dating someone, you should:",
+        "q1_options": [
+            "Tell them about your dating history",
+            "Avoid talking about dating history"
+        ],
+        "q2_prompt": "If a date you like is pressuring you to get physical and you're not ready, you should:",
+        "q2_options": [
+            "Date someone else",
+            "Change the subject"
+        ],
+        "topic_answers": [
+            2,
+            2
+        ]
+    },
+    "quiz14": {
+        "q1_prompt": "The FIRST thing you should do when you get into an argument with a friend is:",
+        "q1_options": [
+            "Listen and keep your cool",
+            "Explain your side"
+        ],
+        "q2_prompt": "When a friend accuses you of doing something you didn't do:",
+        "q2_options": [
+            "Say you're sorry that this happened",
+            "Explain your side until they believe you"
+        ],
+        "topic_answers": [
+            1,
+            1
+        ]
+    },
+    "quiz15": {
+        "q1_prompt": "If someone is teasing you and calling you names:",
+        "q1_options": [
+            "Ignore them or walk away",
+            "Give a teasing comeback"
+        ],
+        "q2_prompt": "A good strategy for handling physical bullying:",
+        "q2_options": [
+            "Try to make friends with the person so they won't bully you",
+            "Don't try to make friends with the person"
+        ],
+        "topic_answers": [
+            2,
+            2
+        ]
+    },
+    "quiz16": {
+        "q1_prompt": "If someone spreads a rumor about you that isn't true, you should:",
+        "q1_options": [
+            "Confront the person that started the rumor",
+            "Spread the rumor about yourself"
+        ],
+        "q2_prompt": "If someone is gossiping behinid your back, you should:",
+        "q2_options": [
+            "Let them know that the gossip hurts your feelings",
+            "Act amazed that anyone would belive the gossip"
+        ],
+        "topic_answers": [
+            2,
+            2
+        ]
     }
 }
