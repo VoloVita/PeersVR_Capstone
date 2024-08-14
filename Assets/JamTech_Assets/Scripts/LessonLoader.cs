@@ -26,6 +26,7 @@ public class LessonLoader : MonoBehaviour
     public GameObject QPannel;
     public GameObject CPannel;
     public GameObject readMoreContent;
+    public GameObject exerciseContent;
     public GameObject quiz_content; // quiz content frame
     public GameObject correctButton;
     public GameObject incorrectButton;
@@ -201,6 +202,7 @@ public class LessonLoader : MonoBehaviour
         moreinfo_text = moreinfo_content.transform.Find("Text (TMP)").GetComponent<TMPro.TextMeshProUGUI>();
         moreinfo_text.text = lesson.description;
 
+        
         // Disable all video objects
         foreach (Transform child in non_example_content.transform)
         {
@@ -310,6 +312,17 @@ public class LessonLoader : MonoBehaviour
         readMoreContent.transform.Find($"Lesson{lessonNumber}").gameObject.SetActive(true);
 
         // Update Exercises
+        foreach (Transform child in exerciseContent.transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        if(lessonNumber != 17){
+            exerciseContent.transform.Find($"Lesson{lessonNumber}").gameObject.SetActive(true);
+        }
+        TMPro.TextMeshProUGUI exerciseText = lesson_content.transform.Find("Toggle").Find("Image").Find("Label").GetComponent<TMPro.TextMeshProUGUI>();
+        exerciseText.text = "";
+        foreach(string i in lesson.exercises)
+        exerciseText.text+=i;
 
         // Update Quiz button
         Button quiz_button = take_quiz.GetComponent<Button>();
@@ -378,9 +391,6 @@ public class LessonLoader : MonoBehaviour
                 break;
             case 16:
                 quiz = quizData.quiz16;
-                break;
-            case 17:
-                quiz = quizData.quiz17;
                 break;
             default:
                 quiz = quizData.quiz1;
